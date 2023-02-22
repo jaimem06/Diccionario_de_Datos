@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="183FB629-3B6B-3D01-08B1-A3B95DA5385E" name="Departamento">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>AB9FCE35-19E4-B334-ABF0-9DC88A510EA7</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<abbreviation>dep</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_departamento" id="31AAF33A-6C78-3DC1-756B-D56B7D7F92AA">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>835A4A29-1D3F-2CD9-0065-EC35C79EFF36</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre" id="A05379B6-CCB1-92F9-ECE4-6F174A13F749">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>DE7BCB1F-E27E-D83E-30A9-C6DDA86C88E6</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="responsable" id="431D9893-5934-9CD9-9FAF-DEA264CCFBDD">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>E3DDC5A4-2A23-8AFB-DA51-ED0B1CC6B557</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="responsable_id_responsable" id="6B1575E7-D42A-42C6-3B9A-AD380CD8E89B">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>1FD75052-F678-A609-B4FA-A02C31CDC2E4</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2C294867-9407-0BDD-EA71-03DDB560D1EC" referredColumn="DFDA3B3D-13C4-58F3-1B11-A6DE5188F6C9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C19FCD0F-9F60-7414-0301-97D69F919564" name="departamento_PK">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>03E293C4-C899-99A8-0B91-72B6F7FF1FEA</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="31AAF33A-6C78-3DC1-756B-D56B7D7F92AA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C4EBA2A1-3837-7F0E-886F-AAB580961591" name="departamento__IDX">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>B9C77EEB-297B-08D6-D2EF-87AB370F4C66</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="6B1575E7-D42A-42C6-3B9A-AD380CD8E89B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EAFB8B66-F6CE-1795-CE83-52EEE67E8599" name="departamento_responsable_FK">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>B9C77EEB-297B-08D6-D2EF-87AB370F4C66</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6B1575E7-D42A-42C6-3B9A-AD380CD8E89B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

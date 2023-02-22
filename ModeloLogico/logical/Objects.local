@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="13621CF5-A508-F1BB-A3CB-74A9B6B31979" name="Mapa de calor" seqName="seg_0" propertyClassName="oracle.dbtools.crest.model.design.logical.Entity" propertyParentId="E080F747-EDE4-CA75-FC22-9FD8EC4F6DA2" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="1E24B28A-2225-ACBF-4BAC-1F37A3EC5C12" name="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="5CA137A8-4917-7811-8DF4-A69D86199781" name="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="6D7EBE38-8E56-CF6A-C2EC-90CAF05856B5" name="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="78DD4093-8B48-8822-4302-E191A60A9AE6" name="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="7D807D11-E054-EBB8-0DA2-0B5DFA3F6F5F" name="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="984D0248-0588-C254-6DCC-62BC752CC424" name="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="A70DD87D-498F-8463-68DD-9BF059199150" name="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="B27107DE-65FB-FF43-A51A-0CF8EDAE3B4C" name="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Entity" objectID="CBE7E56D-AC59-C914-FDCA-752CF8D659A4" name="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Relation" objectID="1EFD927E-F0A1-7081-DCA2-F1D8B5A685B6" name="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Relation" objectID="3FC3D207-AD0E-6EB4-77CB-5BCA1C1CE0A7" name="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Relation" objectID="71F7DC9C-E0B6-0B1D-9853-E17A4FB6FD00" name="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Relation" objectID="931920E8-B79C-6AAF-DCC3-01BF70DD74B9" name="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Relation" objectID="A27CEE3F-C8DA-B2CF-26BA-DB1CC8244D40" name="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+   <object objectType="Relation" objectID="EE964E2E-EB52-EF76-1907-5A8F4EC4DF07" name="" seqName="seg_0" propertyClassName="" propertyParentId="" propertySourceId="" propertyTargetId=""/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

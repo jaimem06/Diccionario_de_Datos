@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D50DCC1E-ED4D-9901-1F54-31C142BFE6C3" name="Evaluacion de Frecuencia">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>6D7EBE38-8E56-CF6A-C2EC-90CAF05856B5</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<ordsAlias>evaluacion_frecuencia</ordsAlias>
+<abbreviation>ef</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="riesgo_codigo" id="66B16961-9914-FFF6-8F18-3F43370BCFD1">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>9461900F-E806-AE7D-3297-363F335A5177</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="67AB8FEC-05DE-3C2F-4C09-981D0E652EC3" referredColumn="B0311D11-71B9-2B67-7A83-19578A2ED171"/>
+</associations>
+</Column>
+<Column name="escala" id="973F56CB-E972-0931-B218-453ABF98DECB">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>37D62C79-88F8-C0CC-7792-C911119A3920</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="categoria_eficacia" id="81742A24-7B9C-EF80-D740-6B08A0E7254C">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>A7770035-17A6-9681-A450-B42A2D08DCCC</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="categoria_periocidad" id="E5ADFAA7-E8FC-3199-942C-30E0605FBF84">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>02969703-A057-DAED-B314-72284C0CB702</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="categoria_responsable" id="A98D4CC2-8F53-5B5E-33BD-206A8B87042B">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>64964CEC-58EC-F104-2433-BE3738AAC89A</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="color" id="DD188248-E025-49B6-C765-A5C232A59BCE">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>7A77991B-6838-0357-12FF-F3E7FA698C17</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="1E591538-E3B0-9AF0-B303-3AD117FB8BB3">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>F90185BB-E5E3-93B3-80C7-2178177FE869</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 CHAR</dataTypeSize>
+<ownDataTypeParameters>150 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F3F309E5-6A5F-2D3E-A018-D69141B86202" name="evaluacion_frecuencia_PK">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>B9204EB3-6C82-3731-FDFA-67670C3006A6</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="66B16961-9914-FFF6-8F18-3F43370BCFD1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="54973085-BA99-CE09-513D-CFF1EA23A37B" name="Ev_frecuencia_riesgo_FK">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>CF9C612F-7CE1-28C1-0F54-9A20434CA5C9</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="66B16961-9914-FFF6-8F18-3F43370BCFD1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,25 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="130B6390-4940-E3BF-17AC-6FFFF050EEC7" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="14F6EC77-003B-D87A-18C7-6602DE93929C" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="183FB629-3B6B-3D01-08B1-A3B95DA5385E" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="2A004A40-B327-7464-458A-A7417E92BC9E" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="2BFA694A-7E75-0A5C-C8C5-177B99843A16" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="50A22F59-0069-D240-3208-C57320CA8D58" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="710793DD-A50A-A5BD-DB47-57438926014A" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="A5420D04-C4FB-C42D-C630-715AC28E544D" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="D3923F1A-AA16-C70E-A679-8B74F7555885" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="D50DCC1E-ED4D-9901-1F54-31C142BFE6C3" name="" seqName="seg_0"/>
+   <object objectType="Table" objectID="F499E5D8-80CA-C30E-E108-27DF45EA030A" name="" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="062E1C1D-CCFB-D60B-F163-10362B87F057" name="" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="1831DF1C-87BD-39F1-631C-D8BAEC434715" name="" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="2C294867-9407-0BDD-EA71-03DDB560D1EC" name="" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="462EAE88-A0FF-59C7-1656-96E4CE03DF7F" name="" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="67AB8FEC-05DE-3C2F-4C09-981D0E652EC3" name="" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="886B1A0A-7C8C-AF18-0994-A056E38BE9A4" name="" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="9AFCC645-8F05-087B-6CA3-0CF614199648" name="" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="9F9AC5DA-5DD1-4844-B3FA-6FB252CE24C9" name="" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="B20CC86D-A582-EFA6-9817-C6EB5FE55F03" name="" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="B82ACF53-9352-B330-EB8B-D65C6950DF32" name="" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="D401C0E7-03F1-B6AE-FF4F-9AB4EC2DBE9B" name="" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

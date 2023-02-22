@@ -1,0 +1,173 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F499E5D8-80CA-C30E-E108-27DF45EA030A" name="Riesgos">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>B27107DE-65FB-FF43-A51A-0CF8EDAE3B4C</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<abbreviation>ri</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="B0311D11-71B9-2B67-7A83-19578A2ED171">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>83CC1025-0F7F-8C50-58EC-33F6119DA05B</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="consecuencia" id="AE2B12F5-12D6-F395-ECD1-CBE3FBCBA8A7">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>D4CA786E-5BCF-789D-A382-D552E884842A</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="causa" id="6355073C-4CB1-E677-6252-04CF152238DE">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>3D651574-3F2B-0E68-7017-ECD55784D28D</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="frecuencia" id="DCD98D89-A8FF-A706-3D77-B6EFEB8BB89D">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>AB1CE954-90DB-217D-15E5-1BC8B77A5B26</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="riesgo" id="3E205623-8AEA-B068-1428-D9BF687ADB55">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>07D5CAC9-15D9-2341-0C9C-3F39947F32E7</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="escala" id="B7C02D4D-258D-6180-31F6-1B27B49400AA">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>083EDE6E-0AEE-EE83-B6F5-662162E63E85</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="control_id_control" id="C07CB182-5A72-8C2C-0B04-CF7C0EF5001C">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>10EF024F-E92A-DADB-CEA2-BF0830F70935</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B82ACF53-9352-B330-EB8B-D65C6950DF32" referredColumn="4DEFD749-3174-6A91-120A-5EB14761CE2E"/>
+</associations>
+</Column>
+<Column name="responsable_id_responsable" id="C04E54D5-58EA-F72E-AD91-A6AC7C9BF080">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>034BEA1C-421E-ADA9-245F-4899B1B7EC20</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="062E1C1D-CCFB-D60B-F163-10362B87F057" referredColumn="DFDA3B3D-13C4-58F3-1B11-A6DE5188F6C9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="31823198-40C5-65BB-E931-CC8C7E50A8A8" name="riesgo_PK">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>E02DDA1D-57FD-C25E-4E02-8C7E6EC277D2</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0311D11-71B9-2B67-7A83-19578A2ED171"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3D54BD88-7A4F-F40F-0A66-12DE0B1DF5FC" name="riesgo__IDX">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>7AD766BD-E052-A819-6CAC-5956803E8773</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="C04E54D5-58EA-F72E-AD91-A6AC7C9BF080"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="040915A6-2B98-C0C1-6BAB-556D42589930" name="riesgo__IDXv1">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>931920E8-B79C-6AAF-DCC3-01BF70DD74B9</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="C07CB182-5A72-8C2C-0B04-CF7C0EF5001C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8031039E-06D8-D36D-C20C-3947D2108134" name="riesgo_responsable_FK">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>7AD766BD-E052-A819-6CAC-5956803E8773</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C04E54D5-58EA-F72E-AD91-A6AC7C9BF080"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FEA6C003-1313-E306-C2D8-6DEAD4841098" name="riesgo_control_FK">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>931920E8-B79C-6AAF-DCC3-01BF70DD74B9</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C07CB182-5A72-8C2C-0B04-CF7C0EF5001C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="886B1A0A-7C8C-AF18-0994-A056E38BE9A4" containerWithKeyObject="14F6EC77-003B-D87A-18C7-6602DE93929C" localFKIndex="B257EC13-7F33-6767-C67C-7EEFADB18669" name="matriz_mapa_calor_FK">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>71F7DC9C-E0B6-0B1D-9853-E17A4FB6FD00</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<referredTableLongName>Mapa de Calor</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>710793DD-A50A-A5BD-DB47-57438926014A</referredTableID>
+<keyObject>B5B97855-472A-BD2C-9BE6-4D93F1EEBD2B</keyObject>
+<referredKeyID>B5B97855-472A-BD2C-9BE6-4D93F1EEBD2B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_mapacalor</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

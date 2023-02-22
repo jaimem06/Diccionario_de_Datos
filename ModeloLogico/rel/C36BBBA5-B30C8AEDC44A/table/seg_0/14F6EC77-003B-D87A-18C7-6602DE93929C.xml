@@ -1,0 +1,149 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="14F6EC77-003B-D87A-18C7-6602DE93929C" name="Matriz">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>78DD4093-8B48-8822-4302-E191A60A9AE6</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<abbreviation>ma</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_matriz" id="3BB8F6B4-11CF-7655-8827-6208B8AD6004">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>E7F19635-5590-5132-8D49-037B1E3184A6</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="color" id="88E3862F-DE01-881C-8CA3-4A4F9B6FC3E5">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>E7CBCDD8-A0D0-1E46-A5B2-9CCD55A1BBE7</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="impacto" id="FB57E5A6-C10B-B138-2EBD-35D99C9D9095">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>37C7F0BD-7692-1877-ABD4-E8EF0E26EEFB</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="probabilidad" id="895976E3-0E49-974D-6B56-2EC4C69E6DDB">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>B3FAB3A4-FD83-F7F3-9BFA-E675C44F0A25</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="escala" id="1F1B98CA-DEF5-85AF-A7E1-C4D0A8703550">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>3EF27FD3-76F6-26B0-CF11-659E18642548</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="mapa_calor_id_mapacalor" id="61193E63-3807-CC8B-2667-C1CBA1506995">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>782A69F2-B52D-AC1D-10A5-8EEB8F83697A</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="886B1A0A-7C8C-AF18-0994-A056E38BE9A4" referredColumn="875E9CBD-00B2-6C67-88F4-3C0F7E4315BB"/>
+</associations>
+</Column>
+<Column name="riesgo_codigo" id="C1B80557-CA9A-DE6D-EA8D-18DFBB1671B6">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>B979F810-CCA2-5DC1-9385-B90E6DFA6030</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="462EAE88-A0FF-59C7-1656-96E4CE03DF7F" referredColumn="B0311D11-71B9-2B67-7A83-19578A2ED171"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0CC8AB39-9756-D6AA-30DD-226D38E759DA" name="matriz_PK">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>20A55E12-D015-93CA-AAF2-5EC531DD54FA</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3BB8F6B4-11CF-7655-8827-6208B8AD6004"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C415DD5F-641E-8863-0CB1-160068CAE25F" name="matriz__IDX">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>71F7DC9C-E0B6-0B1D-9853-E17A4FB6FD00</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="61193E63-3807-CC8B-2667-C1CBA1506995"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B257EC13-7F33-6767-C67C-7EEFADB18669" name="matriz_mapa_calor_FK">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>71F7DC9C-E0B6-0B1D-9853-E17A4FB6FD00</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="61193E63-3807-CC8B-2667-C1CBA1506995"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A2DFB94F-ACB2-AB8F-86CE-3B7DCD5230A4" name="matriz_riesgo_FK">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>BD0DE5EE-071E-B1C1-E922-23695D5F6A1B</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C1B80557-CA9A-DE6D-EA8D-18DFBB1671B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,181 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A70DD87D-498F-8463-68DD-9BF059199150" name="control">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 17:05:16 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="C36BBBA5-F747-53AA-6D42-B30C8AEDC44A" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_control" id="BAD0EE7E-C486-FA4E-3947-5EECCFC021D4">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 17:05:34 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="C36BBBA5-F747-53AA-6D42-B30C8AEDC44A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="periocidad" id="87FE1BD3-3FDB-3839-D19D-981D3C3910ED">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 17:05:49 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="C36BBBA5-F747-53AA-6D42-B30C8AEDC44A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="eficacia" id="66E0706A-432D-2C3B-89B8-84225CB6EF62">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 17:10:50 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="C36BBBA5-F747-53AA-6D42-B30C8AEDC44A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="controlEscala_frecuencia" id="A2EE9DA8-B441-80D5-9831-5311E382B91C">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 17:12:42 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="C36BBBA5-F747-53AA-6D42-B30C8AEDC44A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="responsabilidad" id="8F6744DE-1769-C8FD-85E6-9BA8D252FFAF">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 17:12:42 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="C36BBBA5-F747-53AA-6D42-B30C8AEDC44A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="controlEscala_impacto" id="C940F53A-4236-D5EA-99A9-A041AA3D4925">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 17:13:57 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="C36BBBA5-F747-53AA-6D42-B30C8AEDC44A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="automatizacion" id="AE7DB667-CACA-85E9-48EA-DFF6DD3C5531">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 17:14:51 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="C36BBBA5-F747-53AA-6D42-B30C8AEDC44A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="responsable_control" id="D629CAF0-0A98-02B8-1752-11FE7EDC793D">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 17:15:27 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="C36BBBA5-F747-53AA-6D42-B30C8AEDC44A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="oportunidad" id="AC1FCA37-94D6-7B5A-8153-0175863411D8">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 17:15:54 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="C36BBBA5-F747-53AA-6D42-B30C8AEDC44A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="documental" id="1E46953A-A97D-D396-9EC1-399719BEB7F9">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 17:16:37 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="C36BBBA5-F747-53AA-6D42-B30C8AEDC44A" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="descripcion" id="EA9451B9-4310-8D59-4A1F-3D5E650CE59C">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 17:17:26 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="C36BBBA5-F747-53AA-6D42-B30C8AEDC44A" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_mapacalor" id="F571E231-4D42-D98D-8821-F5DBBA64B7B4">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 17:28:35 UTC</createdTime>
+<generatorID>EE964E2E-EB52-EF76-1907-5A8F4EC4DF07</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="C36BBBA5-F747-53AA-6D42-B30C8AEDC44A" value="true"/>
+</engineerTo>
+<referedAttribute>459D2049-A25A-EA1F-1100-381E524047FF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="994E56C1-A0C9-B8D0-2E66-55DF571620CD" name="control PK">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 17:05:47 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<engineerTo>
+<item key="C36BBBA5-F747-53AA-6D42-B30C8AEDC44A" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BAD0EE7E-C486-FA4E-3947-5EECCFC021D4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

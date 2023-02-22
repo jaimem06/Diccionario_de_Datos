@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="67AB8FEC-05DE-3C2F-4C09-981D0E652EC3" containerWithKeyObject="D50DCC1E-ED4D-9901-1F54-31C142BFE6C3" localFKIndex="54973085-BA99-CE09-513D-CFF1EA23A37B" name="Ev_frecuencia_riesgo_FK">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>CF9C612F-7CE1-28C1-0F54-9A20434CA5C9</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<referredTableLongName>Riesgos</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F499E5D8-80CA-C30E-E108-27DF45EA030A</referredTableID>
+<keyObject>31823198-40C5-65BB-E931-CC8C7E50A8A8</keyObject>
+<referredKeyID>31823198-40C5-65BB-E931-CC8C7E50A8A8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>codigo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

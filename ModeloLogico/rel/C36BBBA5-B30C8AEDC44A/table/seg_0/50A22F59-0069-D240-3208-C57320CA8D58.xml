@@ -1,0 +1,139 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="50A22F59-0069-D240-3208-C57320CA8D58" name="Evaluacion de Impacto">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>5CA137A8-4917-7811-8DF4-A69D86199781</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<ordsAlias>evaluacion_impacto</ordsAlias>
+<abbreviation>ei</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="escala" id="24F8D6C1-CF3E-EDF8-FAE7-7EA125C455D2">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>101A1D60-4B84-BB83-D46B-64823AABBD7F</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="categoria_oportunidad" id="81008C53-B527-0B8E-66E9-C036EF7B1D04">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>30B16F8C-5331-1AF7-3A11-72DD6B4AE1A9</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="categoria_documental" id="C65C0FD6-D35C-2DB7-946F-3A17EB3E0242">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>F39054EB-CCB6-521B-2A3F-CA59CF2CFCE6</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="categoria_automatizacion" id="DD099914-CFB8-1732-E937-93D3F9B54CE6">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>4137309F-2176-AA1A-23AF-FFF7F5949123</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="color" id="A6E9A003-FE7A-33FA-D28B-C1E821FF229A">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>8232D887-B49E-6B6E-FE1C-2F2EBFAEF33A</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripcion" id="2F1C9602-6A44-E159-7BB2-45193C250D7E">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>75832DD7-03C3-CB42-3A7F-05E0D17DCA9B</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 CHAR</dataTypeSize>
+<ownDataTypeParameters>150 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="riesgo_codigo" id="99394F94-BF04-6997-EC8B-C441F3A48C99">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>2B5F2A75-5D2C-41B4-2829-C12FE81F8888</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D401C0E7-03F1-B6AE-FF4F-9AB4EC2DBE9B" referredColumn="B0311D11-71B9-2B67-7A83-19578A2ED171"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4B099C09-082A-A9C5-96A3-C83EF4E5CEF5" name="evaluacion_impacto_PK">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:25:15 UTC</createdTime>
+<generatorID>D67F0207-B91F-2685-3143-7945295F9A67</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99394F94-BF04-6997-EC8B-C441F3A48C99"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C087D01C-813D-58B2-9A25-E40585E60B87" name="evaluacion_impacto__IDX">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>ED4A2172-AC04-04AF-C752-55058373AE69</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="99394F94-BF04-6997-EC8B-C441F3A48C99"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EC005A0A-BC4D-3149-E04C-B429FB31E006" name="evaluacion_impacto_riesgo_FK">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>ED4A2172-AC04-04AF-C752-55058373AE69</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99394F94-BF04-6997-EC8B-C441F3A48C99"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

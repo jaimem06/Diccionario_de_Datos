@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2A004A40-B327-7464-458A-A7417E92BC9E" name="Actividad">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>F1EAA6A8-8558-528E-2B4C-CE1E6568238D</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<abbreviation>ac</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nombre" id="856A43EF-774F-9E93-CA2F-ABE3162609AB">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>85DCAC5E-F204-289B-0906-CEE7C7532330</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="codigo" id="7F3034B4-A677-3A9C-7640-D63AEA3A5B52">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>BFF379EE-5412-00E2-38DA-C946EE15BF8D</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="departamento_id_departamento" id="472DDD0D-8D9B-F64D-16E5-3DE757B883BC">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>9EC075C4-C587-2662-13CF-364DCF1765B2</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9AFCC645-8F05-087B-6CA3-0CF614199648" referredColumn="31AAF33A-6C78-3DC1-756B-D56B7D7F92AA"/>
+</associations>
+</Column>
+<Column name="descripcion" id="FC9E82C8-A11A-2DE2-59DD-6B72D71338F1">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:45:52 UTC</createdTime>
+<generatorID>820D1EC3-8ADD-223B-198A-F55AB9A45493</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 CHAR</dataTypeSize>
+<ownDataTypeParameters>150 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="21B1C4C0-0F46-74BB-E426-CC050391C2FA" name="actividad_PK">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>49CE7F53-3829-8B30-8ABB-942B8D1C10F4</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F3034B4-A677-3A9C-7640-D63AEA3A5B52"/>
+<colUsage columnID="472DDD0D-8D9B-F64D-16E5-3DE757B883BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E2248733-C7FC-18E0-DFA0-83D7BA1D50FD" name="actividad_departamento_FK">
+<createdBy>jaime</createdBy>
+<createdTime>2023-02-21 23:06:14 UTC</createdTime>
+<generatorID>BD91F2D8-39C0-9923-F64C-1FE2A01FF632</generatorID>
+<ownerDesignName>ModeloLogico</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="472DDD0D-8D9B-F64D-16E5-3DE757B883BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
