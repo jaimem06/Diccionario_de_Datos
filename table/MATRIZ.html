@@ -79,7 +79,7 @@
 </tr>
 <tr onclick="table_onSelectMasterRow(this, 0, 1)">
 <td>COLOR</td>
-<td>VARCHAR2(20&nbsp;CHAR)</td>
+<td>VARCHAR2(15&nbsp;CHAR)</td>
 <td>No</td>
 <td>null</td>
 <td>2</td>
@@ -87,7 +87,7 @@
 </tr>
 <tr onclick="table_onSelectMasterRow(this, 0, 2)">
 <td>IMPACTO</td>
-<td>VARCHAR2(30&nbsp;CHAR)</td>
+<td>VARCHAR2(100&nbsp;CHAR)</td>
 <td>No</td>
 <td>null</td>
 <td>3</td>
@@ -103,26 +103,18 @@
 </tr>
 <tr onclick="table_onSelectMasterRow(this, 0, 4)">
 <td>ESCALA</td>
-<td>VARCHAR2(20&nbsp;CHAR)</td>
+<td>NUMBER(38,0)</td>
 <td>No</td>
 <td>null</td>
 <td>5</td>
 <td>null</td>
 </tr>
 <tr onclick="table_onSelectMasterRow(this, 0, 5)">
-<td>MAPA_CALOR_ID_MAPACALOR</td>
+<td>MAPA_DE_CALOR_ID_MAPACALOR</td>
 <td>NUMBER(38,0)</td>
 <td>No</td>
 <td>null</td>
 <td>6</td>
-<td>null</td>
-</tr>
-<tr onclick="table_onSelectMasterRow(this, 0, 6)">
-<td>RIESGO_CODIGO</td>
-<td>VARCHAR2(10&nbsp;BYTE)</td>
-<td>No</td>
-<td>null</td>
-<td>7</td>
 <td>null</td>
 </tr>
 </table>
@@ -152,12 +144,12 @@
 <th>VIEW_RELATED</th>
 </tr>
 <tr onclick="table_onSelectMasterRow(this, 1, 0)" class="currentrow">
-<td class="currentcell">MATRIZ_MAPA_CALOR_FK</td>
+<td class="currentcell">MATRIZ_MAPA_DE_CALOR_FK</td>
 <td class="currentcell">Foreign_Key</td>
 <td class="currentcell">null</td>
 <td class="currentcell">USER_PROYECTO</td>
-<td class="currentcell">Mapa&nbsp;de&nbsp;Calor</td>
-<td class="currentcell">MAPA_CALOR_PK</td>
+<td class="currentcell">Mapa_Calor</td>
+<td class="currentcell">MAPA_DE_CALOR_PK</td>
 <td class="currentcell">NO&nbsp;ACTION</td>
 <td class="currentcell">ENABLED</td>
 <td class="currentcell">NOT&nbsp;DEFERRABLE</td>
@@ -165,7 +157,7 @@
 <td class="currentcell">USER&nbsp;NAME</td>
 <td class="currentcell">null</td>
 <td class="currentcell">null</td>
-<td class="currentcell">21/02/2023</td>
+<td class="currentcell">03/03/2023</td>
 <td class="currentcell">null</td>
 <td class="currentcell">null</td>
 <td class="currentcell">null</td>
@@ -185,34 +177,14 @@
 <td>USER&nbsp;NAME</td>
 <td>null</td>
 <td>null</td>
-<td>21/02/2023</td>
+<td>03/03/2023</td>
 <td>USER_PROYECTO</td>
 <td>MATRIZ_PK</td>
 <td>null</td>
 <td>null</td>
 </tr>
 <tr onclick="table_onSelectMasterRow(this, 1, 2)">
-<td>MATRIZ_RIESGO_FK</td>
-<td>Foreign_Key</td>
-<td>null</td>
-<td>USER_PROYECTO</td>
-<td>RIESGOS</td>
-<td>RIESGO_PK</td>
-<td>NO&nbsp;ACTION</td>
-<td>ENABLED</td>
-<td>NOT&nbsp;DEFERRABLE</td>
-<td>VALIDATED</td>
-<td>USER&nbsp;NAME</td>
-<td>null</td>
-<td>null</td>
-<td>21/02/2023</td>
-<td>null</td>
-<td>null</td>
-<td>null</td>
-<td>null</td>
-</tr>
-<tr onclick="table_onSelectMasterRow(this, 1, 3)">
-<td>SYS_C009429</td>
+<td>SYS_C009509</td>
 <td>Check</td>
 <td>"ID_MATRIZ"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
 <td>null</td>
@@ -225,14 +197,14 @@
 <td>GENERATED&nbsp;NAME</td>
 <td>null</td>
 <td>null</td>
-<td>21/02/2023</td>
+<td>03/03/2023</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
 </tr>
-<tr onclick="table_onSelectMasterRow(this, 1, 4)">
-<td>SYS_C009430</td>
+<tr onclick="table_onSelectMasterRow(this, 1, 3)">
+<td>SYS_C009510</td>
 <td>Check</td>
 <td>"COLOR"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
 <td>null</td>
@@ -245,14 +217,14 @@
 <td>GENERATED&nbsp;NAME</td>
 <td>null</td>
 <td>null</td>
-<td>21/02/2023</td>
+<td>03/03/2023</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
 </tr>
-<tr onclick="table_onSelectMasterRow(this, 1, 5)">
-<td>SYS_C009431</td>
+<tr onclick="table_onSelectMasterRow(this, 1, 4)">
+<td>SYS_C009511</td>
 <td>Check</td>
 <td>"IMPACTO"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
 <td>null</td>
@@ -265,14 +237,14 @@
 <td>GENERATED&nbsp;NAME</td>
 <td>null</td>
 <td>null</td>
-<td>21/02/2023</td>
+<td>03/03/2023</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
 </tr>
-<tr onclick="table_onSelectMasterRow(this, 1, 6)">
-<td>SYS_C009432</td>
+<tr onclick="table_onSelectMasterRow(this, 1, 5)">
+<td>SYS_C009512</td>
 <td>Check</td>
 <td>"PROBABILIDAD"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
 <td>null</td>
@@ -285,14 +257,14 @@
 <td>GENERATED&nbsp;NAME</td>
 <td>null</td>
 <td>null</td>
-<td>21/02/2023</td>
+<td>03/03/2023</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
 </tr>
-<tr onclick="table_onSelectMasterRow(this, 1, 7)">
-<td>SYS_C009433</td>
+<tr onclick="table_onSelectMasterRow(this, 1, 6)">
+<td>SYS_C009513</td>
 <td>Check</td>
 <td>"ESCALA"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
 <td>null</td>
@@ -305,16 +277,16 @@
 <td>GENERATED&nbsp;NAME</td>
 <td>null</td>
 <td>null</td>
-<td>21/02/2023</td>
+<td>03/03/2023</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
 </tr>
-<tr onclick="table_onSelectMasterRow(this, 1, 8)">
-<td>SYS_C009434</td>
+<tr onclick="table_onSelectMasterRow(this, 1, 7)">
+<td>SYS_C009514</td>
 <td>Check</td>
-<td>"MAPA_CALOR_ID_MAPACALOR"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>"MAPA_DE_CALOR_ID_MAPACALOR"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
@@ -325,27 +297,7 @@
 <td>GENERATED&nbsp;NAME</td>
 <td>null</td>
 <td>null</td>
-<td>21/02/2023</td>
-<td>null</td>
-<td>null</td>
-<td>null</td>
-<td>null</td>
-</tr>
-<tr onclick="table_onSelectMasterRow(this, 1, 9)">
-<td>SYS_C009435</td>
-<td>Check</td>
-<td>"RIESGO_CODIGO"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
-<td>null</td>
-<td>null</td>
-<td>null</td>
-<td>null</td>
-<td>ENABLED</td>
-<td>NOT&nbsp;DEFERRABLE</td>
-<td>VALIDATED</td>
-<td>GENERATED&nbsp;NAME</td>
-<td>null</td>
-<td>null</td>
-<td>21/02/2023</td>
+<td>03/03/2023</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
@@ -370,7 +322,7 @@
 <th>COLUMN_POSITION</th>
 </tr>
 <tr onclick="table_onSelectRow(this, 2)" class="currentrow">
-<td class="currentcell">MAPA_CALOR_ID_MAPACALOR</td>
+<td class="currentcell">MAPA_DE_CALOR_ID_MAPACALOR</td>
 <td class="currentcell">1</td>
 </tr>
 </table>
@@ -396,8 +348,8 @@
 <th>COLUMN_POSITION</th>
 </tr>
 <tr onclick="table_onSelectRow(this, 4)" class="currentrow">
-<td class="currentcell">RIESGO_CODIGO</td>
-<td class="currentcell">1</td>
+<td class="currentcell">ID_MATRIZ</td>
+<td class="currentcell">null</td>
 </tr>
 </table>
 </div>
@@ -409,7 +361,7 @@
 <th>COLUMN_POSITION</th>
 </tr>
 <tr onclick="table_onSelectRow(this, 5)" class="currentrow">
-<td class="currentcell">ID_MATRIZ</td>
+<td class="currentcell">COLOR</td>
 <td class="currentcell">null</td>
 </tr>
 </table>
@@ -422,7 +374,7 @@
 <th>COLUMN_POSITION</th>
 </tr>
 <tr onclick="table_onSelectRow(this, 6)" class="currentrow">
-<td class="currentcell">COLOR</td>
+<td class="currentcell">IMPACTO</td>
 <td class="currentcell">null</td>
 </tr>
 </table>
@@ -435,7 +387,7 @@
 <th>COLUMN_POSITION</th>
 </tr>
 <tr onclick="table_onSelectRow(this, 7)" class="currentrow">
-<td class="currentcell">IMPACTO</td>
+<td class="currentcell">PROBABILIDAD</td>
 <td class="currentcell">null</td>
 </tr>
 </table>
@@ -448,7 +400,7 @@
 <th>COLUMN_POSITION</th>
 </tr>
 <tr onclick="table_onSelectRow(this, 8)" class="currentrow">
-<td class="currentcell">PROBABILIDAD</td>
+<td class="currentcell">ESCALA</td>
 <td class="currentcell">null</td>
 </tr>
 </table>
@@ -461,33 +413,7 @@
 <th>COLUMN_POSITION</th>
 </tr>
 <tr onclick="table_onSelectRow(this, 9)" class="currentrow">
-<td class="currentcell">ESCALA</td>
-<td class="currentcell">null</td>
-</tr>
-</table>
-</div>
-</div>
-<div id="Child.0.8.1">
-<div class="childreport"><table id="Table.10" cellpadding="0" cellspacing="0" summary="">
-<tr>
-<th>COLUMN_NAME</th>
-<th>COLUMN_POSITION</th>
-</tr>
-<tr onclick="table_onSelectRow(this, 10)" class="currentrow">
-<td class="currentcell">MAPA_CALOR_ID_MAPACALOR</td>
-<td class="currentcell">null</td>
-</tr>
-</table>
-</div>
-</div>
-<div id="Child.0.9.1">
-<div class="childreport"><table id="Table.11" cellpadding="0" cellspacing="0" summary="">
-<tr>
-<th>COLUMN_NAME</th>
-<th>COLUMN_POSITION</th>
-</tr>
-<tr onclick="table_onSelectRow(this, 11)" class="currentrow">
-<td class="currentcell">RIESGO_CODIGO</td>
+<td class="currentcell">MAPA_DE_CALOR_ID_MAPACALOR</td>
 <td class="currentcell">null</td>
 </tr>
 </table>
@@ -498,7 +424,7 @@
 </div>
 <div id="Master.2">
 <div class="masterreport">
-<table id="Table.12" cellpadding="0" cellspacing="0" summary="">
+<table id="Table.10" cellpadding="0" cellspacing="0" summary="">
 <tr>
 <th>PRIVILEGE</th>
 <th>GRANTEE</th>
@@ -511,7 +437,7 @@
 </div>
 <div id="Master.3">
 <div class="masterreport">
-<table id="Table.13" cellpadding="0" cellspacing="0" summary="">
+<table id="Table.11" cellpadding="0" cellspacing="0" summary="">
 <th>NAME</th>
 <th>VALUE</th>
 </tr>
@@ -556,7 +482,7 @@
 </div>
 <div id="Master.4">
 <div class="masterreport">
-<table id="Table.14" cellpadding="0" cellspacing="0" summary="">
+<table id="Table.12" cellpadding="0" cellspacing="0" summary="">
 <tr>
 <th>TRIGGER_NAME</th>
 <th>TRIGGER_TYPE</th>
@@ -582,7 +508,7 @@
 </div>
 <div id="Master.5">
 <div class="masterreport">
-<table id="Table.15" cellpadding="0" cellspacing="0" summary="">
+<table id="Table.13" cellpadding="0" cellspacing="0" summary="">
 <tr>
 <th>OWNER</th>
 <th>NAME</th>
@@ -591,9 +517,9 @@
 <th>REFERENCED_NAME</th>
 <th>REFERENCED_TYPE</th>
 </tr>
-<tr onclick="table_onSelectMasterRow(this, 15, 0)" class="currentrow">
+<tr onclick="table_onSelectMasterRow(this, 13, 0)" class="currentrow">
 <td class="currentcell">USER_PROYECTO</td>
-<td class="currentcell">V_MATRIZ</td>
+<td class="currentcell">VISTA_MAPACALOR_RESPONSABLE</td>
 <td class="currentcell">VIEW</td>
 <td class="currentcell">USER_PROYECTO</td>
 <td class="currentcell">MATRIZ</td>
@@ -612,7 +538,7 @@
 <br/>
 <div id="ChildReports.5">
 <div id="Child.0.0.5">
-<div class="currentchildreport"><table id="Table.16" cellpadding="0" cellspacing="0" summary="">
+<div class="currentchildreport"><table id="Table.14" cellpadding="0" cellspacing="0" summary="">
 <tr>
 <th>OWNER</th>
 <th>NAME</th>
@@ -629,17 +555,17 @@
 </div>
 <div id="Master.6">
 <div class="masterreport">
-<table id="Table.17" cellpadding="0" cellspacing="0" summary="">
+<table id="Table.15" cellpadding="0" cellspacing="0" summary="">
 <th>NAME</th>
 <th>VALUE</th>
 </tr>
 <tr>
 <td>CREATED</td>
-<td>21/02/2023</td>
+<td>03/03/2023</td>
 </tr>
 <tr>
 <td>LAST_DDL_TIME</td>
-<td>22/02/2023</td>
+<td>03/03/2023</td>
 </tr>
 <tr>
 <td>OWNER</td>
@@ -683,19 +609,19 @@
 </tr>
 <tr>
 <td>INITIAL_EXTENT</td>
-<td>null</td>
+<td>65536</td>
 </tr>
 <tr>
 <td>NEXT_EXTENT</td>
-<td>null</td>
+<td>1048576</td>
 </tr>
 <tr>
 <td>MIN_EXTENTS</td>
-<td>null</td>
+<td>1</td>
 </tr>
 <tr>
 <td>MAX_EXTENTS</td>
-<td>null</td>
+<td>2147483645</td>
 </tr>
 <tr>
 <td>PCT_INCREASE</td>
@@ -886,7 +812,7 @@
 </div>
 <div id="Master.7">
 <div class="masterreport">
-<table id="Table.18" cellpadding="0" cellspacing="0" summary="">
+<table id="Table.16" cellpadding="0" cellspacing="0" summary="">
 <tr>
 <th>PARTITION_NAME</th>
 <th>LAST_ANALYZED</th>
@@ -912,7 +838,7 @@
 </div>
 <div id="Master.8">
 <div class="masterreport">
-<table id="Table.19" cellpadding="0" cellspacing="0" summary="">
+<table id="Table.17" cellpadding="0" cellspacing="0" summary="">
 <tr>
 <th>INDEX_OWNER</th>
 <th>INDEX_NAME</th>
@@ -925,7 +851,7 @@
 <th>JOIN_INDEX</th>
 <th>COLUMNS</th>
 </tr>
-<tr onclick="table_onSelectMasterRow(this, 19, 0)" class="currentrow">
+<tr onclick="table_onSelectMasterRow(this, 17, 0)" class="currentrow">
 <td class="currentcell">USER_PROYECTO</td>
 <td class="currentcell">MATRIZ_PK</td>
 <td class="currentcell">UNIQUE</td>
@@ -937,7 +863,7 @@
 <td class="currentcell">NO</td>
 <td class="currentcell">ID_MATRIZ</td>
 </tr>
-<tr onclick="table_onSelectMasterRow(this, 19, 1)">
+<tr onclick="table_onSelectMasterRow(this, 17, 1)">
 <td>USER_PROYECTO</td>
 <td>MATRIZ__IDX</td>
 <td>UNIQUE</td>
@@ -947,7 +873,7 @@
 <td>NO</td>
 <td>null</td>
 <td>NO</td>
-<td>MAPA_CALOR_ID_MAPACALOR</td>
+<td>MAPA_DE_CALOR_ID_MAPACALOR</td>
 </tr>
 </table>
 <br/>
@@ -962,7 +888,7 @@
 <br/>
 <div id="ChildReports.8">
 <div id="Child.0.0.8">
-<div class="currentchildreport"><table id="Table.20" cellpadding="0" cellspacing="0" summary="">
+<div class="currentchildreport"><table id="Table.18" cellpadding="0" cellspacing="0" summary="">
 <tr>
 <th>INDEX_OWNER</th>
 <th>INDEX_NAME</th>
@@ -976,7 +902,7 @@
 <th>COLLATED_COLUMN_ID</th>
 <th>COLUMN_EXPRESSION</th>
 </tr>
-<tr onclick="table_onSelectRow(this, 20)" class="currentrow">
+<tr onclick="table_onSelectRow(this, 18)" class="currentrow">
 <td class="currentcell">USER_PROYECTO</td>
 <td class="currentcell">MATRIZ_PK</td>
 <td class="currentcell">USER_PROYECTO</td>
@@ -993,7 +919,7 @@
 </div>
 </div>
 <div id="Child.0.1.8">
-<div class="childreport"><table id="Table.21" cellpadding="0" cellspacing="0" summary="">
+<div class="childreport"><table id="Table.19" cellpadding="0" cellspacing="0" summary="">
 <tr>
 <th>INDEX_OWNER</th>
 <th>INDEX_NAME</th>
@@ -1007,12 +933,12 @@
 <th>COLLATED_COLUMN_ID</th>
 <th>COLUMN_EXPRESSION</th>
 </tr>
-<tr onclick="table_onSelectRow(this, 21)" class="currentrow">
+<tr onclick="table_onSelectRow(this, 19)" class="currentrow">
 <td class="currentcell">USER_PROYECTO</td>
 <td class="currentcell">MATRIZ__IDX</td>
 <td class="currentcell">USER_PROYECTO</td>
 <td class="currentcell">MATRIZ</td>
-<td class="currentcell">MAPA_CALOR_ID_MAPACALOR</td>
+<td class="currentcell">MAPA_DE_CALOR_ID_MAPACALOR</td>
 <td class="currentcell">1</td>
 <td class="currentcell">22</td>
 <td class="currentcell">0</td>
