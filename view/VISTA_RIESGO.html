@@ -58,7 +58,7 @@
 <th>DELETABLE</th>
 </tr>
 <tr onclick="table_onSelectMasterRow(this, 0, 0)" class="currentrow">
-<td class="currentcell">CODIGO</td>
+<td class="currentcell">ID_RIESGO</td>
 <td class="currentcell">NUMBER(38)</td>
 <td class="currentcell">No</td>
 <td class="currentcell">null</td>
@@ -69,8 +69,8 @@
 <td class="currentcell">YES</td>
 </tr>
 <tr onclick="table_onSelectMasterRow(this, 0, 1)">
-<td>CONSECUENCIA</td>
-<td>VARCHAR2(100&nbsp;CHAR)</td>
+<td>FRECUENCIA</td>
+<td>NUMBER(38)</td>
 <td>No</td>
 <td>null</td>
 <td>2</td>
@@ -80,8 +80,8 @@
 <td>YES</td>
 </tr>
 <tr onclick="table_onSelectMasterRow(this, 0, 2)">
-<td>CAUSA</td>
-<td>VARCHAR2(100&nbsp;CHAR)</td>
+<td>IMPACTO</td>
+<td>NUMBER(38)</td>
 <td>No</td>
 <td>null</td>
 <td>3</td>
@@ -91,8 +91,8 @@
 <td>YES</td>
 </tr>
 <tr onclick="table_onSelectMasterRow(this, 0, 3)">
-<td>FRECUENCIA</td>
-<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>CAUSA</td>
+<td>VARCHAR2(50&nbsp;CHAR)</td>
 <td>No</td>
 <td>null</td>
 <td>4</td>
@@ -102,8 +102,8 @@
 <td>YES</td>
 </tr>
 <tr onclick="table_onSelectMasterRow(this, 0, 4)">
-<td>DESCRIPCION</td>
-<td>VARCHAR2(500&nbsp;CHAR)</td>
+<td>CONSECUENCIA</td>
+<td>VARCHAR2(50&nbsp;CHAR)</td>
 <td>No</td>
 <td>null</td>
 <td>5</td>
@@ -113,11 +113,44 @@
 <td>YES</td>
 </tr>
 <tr onclick="table_onSelectMasterRow(this, 0, 5)">
+<td>DESCRIPCION</td>
+<td>VARCHAR2(50&nbsp;CHAR)</td>
+<td>No</td>
+<td>null</td>
+<td>6</td>
+<td>null</td>
+<td>YES</td>
+<td>YES</td>
+<td>YES</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 6)">
+<td>PROCESO_CODIGO_PROCESO</td>
+<td>VARCHAR2(10&nbsp;CHAR)</td>
+<td>No</td>
+<td>null</td>
+<td>7</td>
+<td>null</td>
+<td>YES</td>
+<td>YES</td>
+<td>YES</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 7)">
 <td>ESCALA</td>
 <td>NUMBER(38)</td>
 <td>No</td>
 <td>null</td>
-<td>6</td>
+<td>8</td>
+<td>null</td>
+<td>YES</td>
+<td>YES</td>
+<td>YES</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 8)">
+<td>NOMBRE</td>
+<td>VARCHAR2(20&nbsp;CHAR)</td>
+<td>Yes</td>
+<td>null</td>
+<td>9</td>
 <td>null</td>
 <td>YES</td>
 <td>YES</td>
@@ -173,11 +206,11 @@
 </tr>
 <tr>
 <td>CREATED</td>
-<td>03/03/2023</td>
+<td>07/03/2023</td>
 </tr>
 <tr>
 <td>LAST_DDL_TIME</td>
-<td>03/03/2023</td>
+<td>07/03/2023</td>
 </tr>
 <tr>
 <td>OWNER</td>
@@ -189,17 +222,19 @@
 </tr>
 <tr>
 <td>TEXT_LENGTH</td>
-<td>79</td>
+<td>217</td>
 </tr>
 <tr>
 <td>TEXT</td>
-<td>SELECT&nbsp;codigo,&nbsp;consecuencia,&nbsp;causa,&nbsp;frecuencia,&nbsp;descripcion,&nbsp;escala
-FROM&nbsp;riesgo</td>
+<td>SELECT&nbsp;r.id_riesgo,&nbsp;r.frecuencia,&nbsp;r.impacto,&nbsp;r.causa,&nbsp;r.consecuencia,&nbsp;r.descripcion,&nbsp;r.proceso_codigo_proceso,&nbsp;f.escala,&nbsp;f.nombre
+FROM&nbsp;riesgo&nbsp;r
+JOIN&nbsp;factor_riesgo&nbsp;f&nbsp;ON&nbsp;r.factor_riesgo_id_fact_riesgo&nbsp;=&nbsp;f.id_fact_riesgo</td>
 </tr>
 <tr>
 <td>TEXT_VC</td>
-<td>SELECT&nbsp;codigo,&nbsp;consecuencia,&nbsp;causa,&nbsp;frecuencia,&nbsp;descripcion,&nbsp;escala
-FROM&nbsp;riesgo</td>
+<td>SELECT&nbsp;r.id_riesgo,&nbsp;r.frecuencia,&nbsp;r.impacto,&nbsp;r.causa,&nbsp;r.consecuencia,&nbsp;r.descripcion,&nbsp;r.proceso_codigo_proceso,&nbsp;f.escala,&nbsp;f.nombre
+FROM&nbsp;riesgo&nbsp;r
+JOIN&nbsp;factor_riesgo&nbsp;f&nbsp;ON&nbsp;r.factor_riesgo_id_fact_riesgo&nbsp;=&nbsp;f.id_fact_riesgo</td>
 </tr>
 <tr>
 <td>TYPE_TEXT_LENGTH</td>

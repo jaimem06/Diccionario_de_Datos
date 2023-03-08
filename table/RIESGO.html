@@ -70,59 +70,83 @@
 <th>COMMENTS</th>
 </tr>
 <tr onclick="table_onSelectMasterRow(this, 0, 0)" class="currentrow">
-<td class="currentcell">CODIGO</td>
+<td class="currentcell">ID_RIESGO</td>
 <td class="currentcell">NUMBER(38,0)</td>
 <td class="currentcell">No</td>
 <td class="currentcell">null</td>
 <td class="currentcell">1</td>
-<td class="currentcell">null</td>
+<td class="currentcell">Identificador&nbsp;del&nbsp;riesgo</td>
 </tr>
 <tr onclick="table_onSelectMasterRow(this, 0, 1)">
-<td>CONSECUENCIA</td>
-<td>VARCHAR2(100&nbsp;CHAR)</td>
-<td>No</td>
-<td>null</td>
-<td>2</td>
-<td>null</td>
-</tr>
-<tr onclick="table_onSelectMasterRow(this, 0, 2)">
-<td>CAUSA</td>
-<td>VARCHAR2(100&nbsp;CHAR)</td>
-<td>No</td>
-<td>null</td>
-<td>3</td>
-<td>null</td>
-</tr>
-<tr onclick="table_onSelectMasterRow(this, 0, 3)">
 <td>FRECUENCIA</td>
-<td>VARCHAR2(10&nbsp;CHAR)</td>
-<td>No</td>
-<td>null</td>
-<td>4</td>
-<td>null</td>
-</tr>
-<tr onclick="table_onSelectMasterRow(this, 0, 4)">
-<td>DESCRIPCION</td>
-<td>VARCHAR2(500&nbsp;CHAR)</td>
-<td>No</td>
-<td>null</td>
-<td>5</td>
-<td>Aqui&nbsp;va&nbsp;la&nbsp;descipcion&nbsp;del&nbsp;riesgo&nbsp;y&nbsp;debe&nbsp;ser&nbsp;obligatorio&nbsp;para&nbsp;que&nbsp;el&nbsp;responsable&nbsp;pueda&nbsp;ver&nbsp;los&nbsp;detalles&nbsp;y&nbsp;asi&nbsp;solucionar</td>
-</tr>
-<tr onclick="table_onSelectMasterRow(this, 0, 5)">
-<td>ESCALA</td>
 <td>NUMBER(38,0)</td>
 <td>No</td>
 <td>null</td>
+<td>2</td>
+<td>Valor&nbsp;de&nbsp;Frecuencia</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 2)">
+<td>IMPACTO</td>
+<td>NUMBER(38,0)</td>
+<td>No</td>
+<td>null</td>
+<td>3</td>
+<td>valor&nbsp;de&nbsp;Impacto</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 3)">
+<td>CAUSA</td>
+<td>VARCHAR2(50&nbsp;CHAR)</td>
+<td>No</td>
+<td>null</td>
+<td>4</td>
+<td>Descripcion&nbsp;de&nbsp;la&nbsp;causa&nbsp;del&nbsp;riesgo</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 4)">
+<td>CONSECUENCIA</td>
+<td>VARCHAR2(50&nbsp;CHAR)</td>
+<td>No</td>
+<td>null</td>
+<td>5</td>
+<td>Descipcion&nbsp;de&nbsp;la&nbsp;consecuencia&nbsp;que&nbsp;se&nbsp;genero&nbsp;con&nbsp;la&nbsp;causa</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 5)">
+<td>DESCRIPCION</td>
+<td>VARCHAR2(50&nbsp;CHAR)</td>
+<td>No</td>
+<td>null</td>
 <td>6</td>
-<td>Escala&nbsp;del&nbsp;riesgo</td>
+<td>null</td>
 </tr>
 <tr onclick="table_onSelectMasterRow(this, 0, 6)">
-<td>MATRIZ_ID_MATRIZ</td>
+<td>FACTOR_RIESGO_ID_FACT_RIESGO</td>
 <td>NUMBER(38,0)</td>
 <td>No</td>
 <td>null</td>
 <td>7</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 7)">
+<td>SUBPROCESO_CODIGO_SUBPROCESO</td>
+<td>VARCHAR2(10&nbsp;BYTE)</td>
+<td>No</td>
+<td>null</td>
+<td>8</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 8)">
+<td>CLASIFICACION_RIESGO</td>
+<td>VARCHAR2(40&nbsp;CHAR)</td>
+<td>No</td>
+<td>null</td>
+<td>9</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 0, 9)">
+<td>RIESGO_INHERENTE_ID_RI</td>
+<td>NUMBER(38,0)</td>
+<td>No</td>
+<td>null</td>
+<td>10</td>
 <td>null</td>
 </tr>
 </table>
@@ -152,12 +176,12 @@
 <th>VIEW_RELATED</th>
 </tr>
 <tr onclick="table_onSelectMasterRow(this, 1, 0)" class="currentrow">
-<td class="currentcell">RIESGO_MATRIZ_FK</td>
+<td class="currentcell">RIESGO_FACTOR_RIESGO_FK</td>
 <td class="currentcell">Foreign_Key</td>
 <td class="currentcell">null</td>
 <td class="currentcell">USER_PROYECTO</td>
-<td class="currentcell">MATRIZ</td>
-<td class="currentcell">MATRIZ_PK</td>
+<td class="currentcell">FACTOR_RIESGO</td>
+<td class="currentcell">FACTOR_RIESGO_PK</td>
 <td class="currentcell">NO&nbsp;ACTION</td>
 <td class="currentcell">ENABLED</td>
 <td class="currentcell">NOT&nbsp;DEFERRABLE</td>
@@ -165,7 +189,7 @@
 <td class="currentcell">USER&nbsp;NAME</td>
 <td class="currentcell">null</td>
 <td class="currentcell">null</td>
-<td class="currentcell">03/03/2023</td>
+<td class="currentcell">08/03/2023</td>
 <td class="currentcell">null</td>
 <td class="currentcell">null</td>
 <td class="currentcell">null</td>
@@ -185,56 +209,56 @@
 <td>USER&nbsp;NAME</td>
 <td>null</td>
 <td>null</td>
-<td>03/03/2023</td>
+<td>08/03/2023</td>
 <td>USER_PROYECTO</td>
 <td>RIESGO_PK</td>
 <td>null</td>
 <td>null</td>
 </tr>
 <tr onclick="table_onSelectMasterRow(this, 1, 2)">
-<td>SYS_C009523</td>
-<td>Check</td>
-<td>"CODIGO"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>RIESGO_RIESGO_INHERENTE_FK</td>
+<td>Foreign_Key</td>
 <td>null</td>
-<td>null</td>
-<td>null</td>
-<td>null</td>
+<td>USER_PROYECTO</td>
+<td>RIESGO_INHERENTE</td>
+<td>RIESGO_INHERENTE_PK</td>
+<td>NO&nbsp;ACTION</td>
 <td>ENABLED</td>
 <td>NOT&nbsp;DEFERRABLE</td>
 <td>VALIDATED</td>
-<td>GENERATED&nbsp;NAME</td>
+<td>USER&nbsp;NAME</td>
 <td>null</td>
 <td>null</td>
-<td>03/03/2023</td>
+<td>08/03/2023</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
 </tr>
 <tr onclick="table_onSelectMasterRow(this, 1, 3)">
-<td>SYS_C009524</td>
-<td>Check</td>
-<td>"CONSECUENCIA"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>RIESGO_SUBPROCESO_FK</td>
+<td>Foreign_Key</td>
 <td>null</td>
-<td>null</td>
-<td>null</td>
-<td>null</td>
+<td>USER_PROYECTO</td>
+<td>SUBPROCESO</td>
+<td>SUBPROCESO_PK</td>
+<td>NO&nbsp;ACTION</td>
 <td>ENABLED</td>
 <td>NOT&nbsp;DEFERRABLE</td>
 <td>VALIDATED</td>
-<td>GENERATED&nbsp;NAME</td>
+<td>USER&nbsp;NAME</td>
 <td>null</td>
 <td>null</td>
-<td>03/03/2023</td>
+<td>08/03/2023</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
 </tr>
 <tr onclick="table_onSelectMasterRow(this, 1, 4)">
-<td>SYS_C009525</td>
+<td>SYS_C009685</td>
 <td>Check</td>
-<td>"CAUSA"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>"ID_RIESGO"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
@@ -245,14 +269,14 @@
 <td>GENERATED&nbsp;NAME</td>
 <td>null</td>
 <td>null</td>
-<td>03/03/2023</td>
+<td>08/03/2023</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
 </tr>
 <tr onclick="table_onSelectMasterRow(this, 1, 5)">
-<td>SYS_C009526</td>
+<td>SYS_C009686</td>
 <td>Check</td>
 <td>"FRECUENCIA"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
 <td>null</td>
@@ -265,14 +289,74 @@
 <td>GENERATED&nbsp;NAME</td>
 <td>null</td>
 <td>null</td>
-<td>03/03/2023</td>
+<td>08/03/2023</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
 </tr>
 <tr onclick="table_onSelectMasterRow(this, 1, 6)">
-<td>SYS_C009527</td>
+<td>SYS_C009687</td>
+<td>Check</td>
+<td>"IMPACTO"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>08/03/2023</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 7)">
+<td>SYS_C009688</td>
+<td>Check</td>
+<td>"CAUSA"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>08/03/2023</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 8)">
+<td>SYS_C009689</td>
+<td>Check</td>
+<td>"CONSECUENCIA"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>08/03/2023</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 9)">
+<td>SYS_C009690</td>
 <td>Check</td>
 <td>"DESCRIPCION"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
 <td>null</td>
@@ -285,16 +369,16 @@
 <td>GENERATED&nbsp;NAME</td>
 <td>null</td>
 <td>null</td>
-<td>03/03/2023</td>
+<td>08/03/2023</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
 </tr>
-<tr onclick="table_onSelectMasterRow(this, 1, 7)">
-<td>SYS_C009528</td>
+<tr onclick="table_onSelectMasterRow(this, 1, 10)">
+<td>SYS_C009691</td>
 <td>Check</td>
-<td>"ESCALA"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>"FACTOR_RIESGO_ID_FACT_RIESGO"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
@@ -305,16 +389,16 @@
 <td>GENERATED&nbsp;NAME</td>
 <td>null</td>
 <td>null</td>
-<td>03/03/2023</td>
+<td>08/03/2023</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
 </tr>
-<tr onclick="table_onSelectMasterRow(this, 1, 8)">
-<td>SYS_C009529</td>
+<tr onclick="table_onSelectMasterRow(this, 1, 11)">
+<td>SYS_C009692</td>
 <td>Check</td>
-<td>"MATRIZ_ID_MATRIZ"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>"SUBPROCESO_CODIGO_SUBPROCESO"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
@@ -325,7 +409,47 @@
 <td>GENERATED&nbsp;NAME</td>
 <td>null</td>
 <td>null</td>
-<td>03/03/2023</td>
+<td>08/03/2023</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 12)">
+<td>SYS_C009693</td>
+<td>Check</td>
+<td>"CLASIFICACION_RIESGO"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>08/03/2023</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 13)">
+<td>SYS_C009694</td>
+<td>Check</td>
+<td>"RIESGO_INHERENTE_ID_RI"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>08/03/2023</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
@@ -350,7 +474,7 @@
 <th>COLUMN_POSITION</th>
 </tr>
 <tr onclick="table_onSelectRow(this, 2)" class="currentrow">
-<td class="currentcell">MATRIZ_ID_MATRIZ</td>
+<td class="currentcell">FACTOR_RIESGO_ID_FACT_RIESGO</td>
 <td class="currentcell">1</td>
 </tr>
 </table>
@@ -363,7 +487,7 @@
 <th>COLUMN_POSITION</th>
 </tr>
 <tr onclick="table_onSelectRow(this, 3)" class="currentrow">
-<td class="currentcell">CODIGO</td>
+<td class="currentcell">ID_RIESGO</td>
 <td class="currentcell">1</td>
 </tr>
 </table>
@@ -376,8 +500,8 @@
 <th>COLUMN_POSITION</th>
 </tr>
 <tr onclick="table_onSelectRow(this, 4)" class="currentrow">
-<td class="currentcell">CODIGO</td>
-<td class="currentcell">null</td>
+<td class="currentcell">RIESGO_INHERENTE_ID_RI</td>
+<td class="currentcell">1</td>
 </tr>
 </table>
 </div>
@@ -389,8 +513,8 @@
 <th>COLUMN_POSITION</th>
 </tr>
 <tr onclick="table_onSelectRow(this, 5)" class="currentrow">
-<td class="currentcell">CONSECUENCIA</td>
-<td class="currentcell">null</td>
+<td class="currentcell">SUBPROCESO_CODIGO_SUBPROCESO</td>
+<td class="currentcell">1</td>
 </tr>
 </table>
 </div>
@@ -402,7 +526,7 @@
 <th>COLUMN_POSITION</th>
 </tr>
 <tr onclick="table_onSelectRow(this, 6)" class="currentrow">
-<td class="currentcell">CAUSA</td>
+<td class="currentcell">ID_RIESGO</td>
 <td class="currentcell">null</td>
 </tr>
 </table>
@@ -428,7 +552,7 @@
 <th>COLUMN_POSITION</th>
 </tr>
 <tr onclick="table_onSelectRow(this, 8)" class="currentrow">
-<td class="currentcell">DESCRIPCION</td>
+<td class="currentcell">IMPACTO</td>
 <td class="currentcell">null</td>
 </tr>
 </table>
@@ -441,7 +565,7 @@
 <th>COLUMN_POSITION</th>
 </tr>
 <tr onclick="table_onSelectRow(this, 9)" class="currentrow">
-<td class="currentcell">ESCALA</td>
+<td class="currentcell">CAUSA</td>
 <td class="currentcell">null</td>
 </tr>
 </table>
@@ -454,7 +578,72 @@
 <th>COLUMN_POSITION</th>
 </tr>
 <tr onclick="table_onSelectRow(this, 10)" class="currentrow">
-<td class="currentcell">MATRIZ_ID_MATRIZ</td>
+<td class="currentcell">CONSECUENCIA</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.9.1">
+<div class="childreport"><table id="Table.11" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 11)" class="currentrow">
+<td class="currentcell">DESCRIPCION</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.10.1">
+<div class="childreport"><table id="Table.12" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 12)" class="currentrow">
+<td class="currentcell">FACTOR_RIESGO_ID_FACT_RIESGO</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.11.1">
+<div class="childreport"><table id="Table.13" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 13)" class="currentrow">
+<td class="currentcell">SUBPROCESO_CODIGO_SUBPROCESO</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.12.1">
+<div class="childreport"><table id="Table.14" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 14)" class="currentrow">
+<td class="currentcell">CLASIFICACION_RIESGO</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.13.1">
+<div class="childreport"><table id="Table.15" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 15)" class="currentrow">
+<td class="currentcell">RIESGO_INHERENTE_ID_RI</td>
 <td class="currentcell">null</td>
 </tr>
 </table>
@@ -465,7 +654,7 @@
 </div>
 <div id="Master.2">
 <div class="masterreport">
-<table id="Table.11" cellpadding="0" cellspacing="0" summary="">
+<table id="Table.16" cellpadding="0" cellspacing="0" summary="">
 <tr>
 <th>PRIVILEGE</th>
 <th>GRANTEE</th>
@@ -478,7 +667,7 @@
 </div>
 <div id="Master.3">
 <div class="masterreport">
-<table id="Table.12" cellpadding="0" cellspacing="0" summary="">
+<table id="Table.17" cellpadding="0" cellspacing="0" summary="">
 <th>NAME</th>
 <th>VALUE</th>
 </tr>
@@ -523,7 +712,7 @@
 </div>
 <div id="Master.4">
 <div class="masterreport">
-<table id="Table.13" cellpadding="0" cellspacing="0" summary="">
+<table id="Table.18" cellpadding="0" cellspacing="0" summary="">
 <tr>
 <th>TRIGGER_NAME</th>
 <th>TRIGGER_TYPE</th>
@@ -549,7 +738,7 @@
 </div>
 <div id="Master.5">
 <div class="masterreport">
-<table id="Table.14" cellpadding="0" cellspacing="0" summary="">
+<table id="Table.19" cellpadding="0" cellspacing="0" summary="">
 <tr>
 <th>OWNER</th>
 <th>NAME</th>
@@ -557,14 +746,6 @@
 <th>REFERENCED_OWNER</th>
 <th>REFERENCED_NAME</th>
 <th>REFERENCED_TYPE</th>
-</tr>
-<tr onclick="table_onSelectMasterRow(this, 14, 0)" class="currentrow">
-<td class="currentcell">USER_PROYECTO</td>
-<td class="currentcell">VISTA_RIESGO</td>
-<td class="currentcell">VIEW</td>
-<td class="currentcell">USER_PROYECTO</td>
-<td class="currentcell">RIESGO</td>
-<td class="currentcell">TABLE</td>
 </tr>
 </table>
 <br/>
@@ -578,35 +759,22 @@
 </div>
 <br/>
 <div id="ChildReports.5">
-<div id="Child.0.0.5">
-<div class="currentchildreport"><table id="Table.15" cellpadding="0" cellspacing="0" summary="">
-<tr>
-<th>OWNER</th>
-<th>NAME</th>
-<th>TYPE</th>
-<th>REFERENCED_OWNER</th>
-<th>REFERENCED_NAME</th>
-<th>REFERENCED_TYPE</th>
-</tr>
-</table>
-</div>
-</div>
 </div>
 </div>
 </div>
 <div id="Master.6">
 <div class="masterreport">
-<table id="Table.16" cellpadding="0" cellspacing="0" summary="">
+<table id="Table.20" cellpadding="0" cellspacing="0" summary="">
 <th>NAME</th>
 <th>VALUE</th>
 </tr>
 <tr>
 <td>CREATED</td>
-<td>03/03/2023</td>
+<td>08/03/2023</td>
 </tr>
 <tr>
 <td>LAST_DDL_TIME</td>
-<td>03/03/2023</td>
+<td>08/03/2023</td>
 </tr>
 <tr>
 <td>OWNER</td>
@@ -650,19 +818,19 @@
 </tr>
 <tr>
 <td>INITIAL_EXTENT</td>
-<td>65536</td>
+<td>null</td>
 </tr>
 <tr>
 <td>NEXT_EXTENT</td>
-<td>1048576</td>
+<td>null</td>
 </tr>
 <tr>
 <td>MIN_EXTENTS</td>
-<td>1</td>
+<td>null</td>
 </tr>
 <tr>
 <td>MAX_EXTENTS</td>
-<td>2147483645</td>
+<td>null</td>
 </tr>
 <tr>
 <td>PCT_INCREASE</td>
@@ -853,7 +1021,7 @@
 </div>
 <div id="Master.7">
 <div class="masterreport">
-<table id="Table.17" cellpadding="0" cellspacing="0" summary="">
+<table id="Table.21" cellpadding="0" cellspacing="0" summary="">
 <tr>
 <th>PARTITION_NAME</th>
 <th>LAST_ANALYZED</th>
@@ -879,7 +1047,7 @@
 </div>
 <div id="Master.8">
 <div class="masterreport">
-<table id="Table.18" cellpadding="0" cellspacing="0" summary="">
+<table id="Table.22" cellpadding="0" cellspacing="0" summary="">
 <tr>
 <th>INDEX_OWNER</th>
 <th>INDEX_NAME</th>
@@ -892,7 +1060,7 @@
 <th>JOIN_INDEX</th>
 <th>COLUMNS</th>
 </tr>
-<tr onclick="table_onSelectMasterRow(this, 18, 0)" class="currentrow">
+<tr onclick="table_onSelectMasterRow(this, 22, 0)" class="currentrow">
 <td class="currentcell">USER_PROYECTO</td>
 <td class="currentcell">RIESGO_PK</td>
 <td class="currentcell">UNIQUE</td>
@@ -902,9 +1070,9 @@
 <td class="currentcell">NO</td>
 <td class="currentcell">null</td>
 <td class="currentcell">NO</td>
-<td class="currentcell">CODIGO</td>
+<td class="currentcell">ID_RIESGO</td>
 </tr>
-<tr onclick="table_onSelectMasterRow(this, 18, 1)">
+<tr onclick="table_onSelectMasterRow(this, 22, 1)">
 <td>USER_PROYECTO</td>
 <td>RIESGO__IDX</td>
 <td>UNIQUE</td>
@@ -914,7 +1082,19 @@
 <td>NO</td>
 <td>null</td>
 <td>NO</td>
-<td>MATRIZ_ID_MATRIZ</td>
+<td>FACTOR_RIESGO_ID_FACT_RIESGO</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 22, 2)">
+<td>USER_PROYECTO</td>
+<td>RIESGO__IDXV1</td>
+<td>UNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>RIESGO_INHERENTE_ID_RI</td>
 </tr>
 </table>
 <br/>
@@ -929,7 +1109,7 @@
 <br/>
 <div id="ChildReports.8">
 <div id="Child.0.0.8">
-<div class="currentchildreport"><table id="Table.19" cellpadding="0" cellspacing="0" summary="">
+<div class="currentchildreport"><table id="Table.23" cellpadding="0" cellspacing="0" summary="">
 <tr>
 <th>INDEX_OWNER</th>
 <th>INDEX_NAME</th>
@@ -943,12 +1123,12 @@
 <th>COLLATED_COLUMN_ID</th>
 <th>COLUMN_EXPRESSION</th>
 </tr>
-<tr onclick="table_onSelectRow(this, 19)" class="currentrow">
+<tr onclick="table_onSelectRow(this, 23)" class="currentrow">
 <td class="currentcell">USER_PROYECTO</td>
 <td class="currentcell">RIESGO_PK</td>
 <td class="currentcell">USER_PROYECTO</td>
 <td class="currentcell">RIESGO</td>
-<td class="currentcell">CODIGO</td>
+<td class="currentcell">ID_RIESGO</td>
 <td class="currentcell">1</td>
 <td class="currentcell">22</td>
 <td class="currentcell">0</td>
@@ -960,7 +1140,7 @@
 </div>
 </div>
 <div id="Child.0.1.8">
-<div class="childreport"><table id="Table.20" cellpadding="0" cellspacing="0" summary="">
+<div class="childreport"><table id="Table.24" cellpadding="0" cellspacing="0" summary="">
 <tr>
 <th>INDEX_OWNER</th>
 <th>INDEX_NAME</th>
@@ -974,12 +1154,43 @@
 <th>COLLATED_COLUMN_ID</th>
 <th>COLUMN_EXPRESSION</th>
 </tr>
-<tr onclick="table_onSelectRow(this, 20)" class="currentrow">
+<tr onclick="table_onSelectRow(this, 24)" class="currentrow">
 <td class="currentcell">USER_PROYECTO</td>
 <td class="currentcell">RIESGO__IDX</td>
 <td class="currentcell">USER_PROYECTO</td>
 <td class="currentcell">RIESGO</td>
-<td class="currentcell">MATRIZ_ID_MATRIZ</td>
+<td class="currentcell">FACTOR_RIESGO_ID_FACT_RIESGO</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.2.8">
+<div class="childreport"><table id="Table.25" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+<th>COLLATED_COLUMN_ID</th>
+<th>COLUMN_EXPRESSION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 25)" class="currentrow">
+<td class="currentcell">USER_PROYECTO</td>
+<td class="currentcell">RIESGO__IDXV1</td>
+<td class="currentcell">USER_PROYECTO</td>
+<td class="currentcell">RIESGO</td>
+<td class="currentcell">RIESGO_INHERENTE_ID_RI</td>
 <td class="currentcell">1</td>
 <td class="currentcell">22</td>
 <td class="currentcell">0</td>

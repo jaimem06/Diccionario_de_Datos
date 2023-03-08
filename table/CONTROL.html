@@ -78,99 +78,91 @@
 <td class="currentcell">null</td>
 </tr>
 <tr onclick="table_onSelectMasterRow(this, 0, 1)">
-<td>PERIOCIDAD</td>
-<td>VARCHAR2(10&nbsp;CHAR)</td>
-<td>Yes</td>
+<td>DESCRIPCION</td>
+<td>VARCHAR2(50&nbsp;CHAR)</td>
+<td>No</td>
 <td>null</td>
 <td>2</td>
-<td>null</td>
+<td>Descripción&nbsp;Control&nbsp;Vigente</td>
 </tr>
 <tr onclick="table_onSelectMasterRow(this, 0, 2)">
-<td>EFICACIA</td>
-<td>VARCHAR2(10&nbsp;CHAR)</td>
-<td>Yes</td>
+<td>VALOR_EVALUACIÓN_IMPACTO</td>
+<td>NUMBER(38,0)</td>
+<td>No</td>
 <td>null</td>
 <td>3</td>
-<td>null</td>
+<td>Valor&nbsp;evaluación&nbsp;de&nbsp;impacto</td>
 </tr>
 <tr onclick="table_onSelectMasterRow(this, 0, 3)">
-<td>CONTROLESCALA_FRECUENCIA</td>
-<td>VARCHAR2(50&nbsp;CHAR)</td>
-<td>Yes</td>
+<td>VALOR_EVALUACIÓN_FRECUENCIA</td>
+<td>NUMBER(38,0)</td>
+<td>No</td>
 <td>null</td>
 <td>4</td>
-<td>null</td>
+<td>Valor&nbsp;evaluación&nbsp;de&nbsp;frecuencia</td>
 </tr>
 <tr onclick="table_onSelectMasterRow(this, 0, 4)">
-<td>RESPONSABILIDAD</td>
-<td>VARCHAR2(50&nbsp;CHAR)</td>
-<td>Yes</td>
+<td>RESPONSABLE_ID_RESPONSABLE</td>
+<td>NUMBER(38,0)</td>
+<td>No</td>
 <td>null</td>
 <td>5</td>
 <td>null</td>
 </tr>
 <tr onclick="table_onSelectMasterRow(this, 0, 5)">
-<td>CONTROLESCALA_IMPACTO</td>
-<td>VARCHAR2(50&nbsp;CHAR)</td>
-<td>Yes</td>
+<td>RIESGO_ID_RIESGO</td>
+<td>NUMBER(38,0)</td>
+<td>No</td>
 <td>null</td>
 <td>6</td>
 <td>null</td>
 </tr>
 <tr onclick="table_onSelectMasterRow(this, 0, 6)">
-<td>AUTOMATIZACION</td>
-<td>VARCHAR2(50&nbsp;CHAR)</td>
-<td>Yes</td>
+<td>EFICACIA_ID_EFICACIA</td>
+<td>NUMBER(38,0)</td>
+<td>No</td>
 <td>null</td>
 <td>7</td>
 <td>null</td>
 </tr>
 <tr onclick="table_onSelectMasterRow(this, 0, 7)">
-<td>RESPONSABLE_CONTROL</td>
-<td>VARCHAR2(50&nbsp;CHAR)</td>
-<td>Yes</td>
+<td>PERIODICIDAD_ID_PERIODICIDAD</td>
+<td>NUMBER(38,0)</td>
+<td>No</td>
 <td>null</td>
 <td>8</td>
 <td>null</td>
 </tr>
 <tr onclick="table_onSelectMasterRow(this, 0, 8)">
-<td>OPORTUNIDAD</td>
-<td>VARCHAR2(50&nbsp;CHAR)</td>
-<td>Yes</td>
+<td>RESPONSABILIDAD_ID_RESP</td>
+<td>NUMBER(38,0)</td>
+<td>No</td>
 <td>null</td>
 <td>9</td>
 <td>null</td>
 </tr>
 <tr onclick="table_onSelectMasterRow(this, 0, 9)">
-<td>DOCUMENTAL</td>
-<td>VARCHAR2(50&nbsp;CHAR)</td>
-<td>Yes</td>
+<td>AUTOMATIZACION_ID_AUTOM</td>
+<td>NUMBER(38,0)</td>
+<td>No</td>
 <td>null</td>
 <td>10</td>
 <td>null</td>
 </tr>
 <tr onclick="table_onSelectMasterRow(this, 0, 10)">
-<td>DESCRIPCION</td>
-<td>VARCHAR2(500&nbsp;CHAR)</td>
+<td>OPORTUNIDAD_ID_OPORTUNIDAD</td>
+<td>NUMBER(38,0)</td>
 <td>No</td>
 <td>null</td>
 <td>11</td>
 <td>null</td>
 </tr>
 <tr onclick="table_onSelectMasterRow(this, 0, 11)">
-<td>MAPA_DE_CALOR_ID_MAPACALOR</td>
+<td>DOCUMENTAL_ID_DOCUMENTAL</td>
 <td>NUMBER(38,0)</td>
 <td>No</td>
 <td>null</td>
 <td>12</td>
-<td>null</td>
-</tr>
-<tr onclick="table_onSelectMasterRow(this, 0, 12)">
-<td>RIESGO_INHERENTE</td>
-<td>VARCHAR2(20&nbsp;BYTE)</td>
-<td>No</td>
-<td>null</td>
-<td>13</td>
 <td>null</td>
 </tr>
 </table>
@@ -200,12 +192,12 @@
 <th>VIEW_RELATED</th>
 </tr>
 <tr onclick="table_onSelectMasterRow(this, 1, 0)" class="currentrow">
-<td class="currentcell">CONTROL_MAPA_DE_CALOR_FK</td>
+<td class="currentcell">CONTROL_AUTOMATIZACION_FK</td>
 <td class="currentcell">Foreign_Key</td>
 <td class="currentcell">null</td>
 <td class="currentcell">USER_PROYECTO</td>
-<td class="currentcell">Mapa_Calor</td>
-<td class="currentcell">MAPA_DE_CALOR_PK</td>
+<td class="currentcell">AUTOMATIZACION</td>
+<td class="currentcell">AUTOMATIZACION_PK</td>
 <td class="currentcell">NO&nbsp;ACTION</td>
 <td class="currentcell">ENABLED</td>
 <td class="currentcell">NOT&nbsp;DEFERRABLE</td>
@@ -213,13 +205,93 @@
 <td class="currentcell">USER&nbsp;NAME</td>
 <td class="currentcell">null</td>
 <td class="currentcell">null</td>
-<td class="currentcell">03/03/2023</td>
+<td class="currentcell">08/03/2023</td>
 <td class="currentcell">null</td>
 <td class="currentcell">null</td>
 <td class="currentcell">null</td>
 <td class="currentcell">null</td>
 </tr>
 <tr onclick="table_onSelectMasterRow(this, 1, 1)">
+<td>CONTROL_DOCUMENTAL_FK</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>USER_PROYECTO</td>
+<td>DOCUMENTAL</td>
+<td>DOCUMENTAL_PK</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>08/03/2023</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 2)">
+<td>CONTROL_EFICACIA_FK</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>USER_PROYECTO</td>
+<td>EFICACIA</td>
+<td>EFICACIA_PK</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>08/03/2023</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 3)">
+<td>CONTROL_OPORTUNIDAD_FK</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>USER_PROYECTO</td>
+<td>OPORTUNIDAD</td>
+<td>OPORTUNIDAD_PK</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>08/03/2023</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 4)">
+<td>CONTROL_PERIODICIDAD_FK</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>USER_PROYECTO</td>
+<td>PERIODICIDAD</td>
+<td>PERIODICIDAD_PK</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>08/03/2023</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 5)">
 <td>CONTROL_PK</td>
 <td>Primary_Key</td>
 <td>null</td>
@@ -233,14 +305,74 @@
 <td>USER&nbsp;NAME</td>
 <td>null</td>
 <td>null</td>
-<td>03/03/2023</td>
+<td>08/03/2023</td>
 <td>USER_PROYECTO</td>
 <td>CONTROL_PK</td>
 <td>null</td>
 <td>null</td>
 </tr>
-<tr onclick="table_onSelectMasterRow(this, 1, 2)">
-<td>SYS_C009476</td>
+<tr onclick="table_onSelectMasterRow(this, 1, 6)">
+<td>CONTROL_RESPONSABILIDAD_FK</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>USER_PROYECTO</td>
+<td>RESPONSABILIDAD</td>
+<td>RESPONSABILIDAD_PK</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>08/03/2023</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 7)">
+<td>CONTROL_RESPONSABLE_FK</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>USER_PROYECTO</td>
+<td>RESPONSABLE</td>
+<td>RESPONSABLE_PK</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>08/03/2023</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 8)">
+<td>CONTROL_RIESGO_FK</td>
+<td>Foreign_Key</td>
+<td>null</td>
+<td>USER_PROYECTO</td>
+<td>RIESGO</td>
+<td>RIESGO_PK</td>
+<td>NO&nbsp;ACTION</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>USER&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>08/03/2023</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 9)">
+<td>SYS_C009628</td>
 <td>Check</td>
 <td>"ID_CONTROL"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
 <td>null</td>
@@ -253,14 +385,14 @@
 <td>GENERATED&nbsp;NAME</td>
 <td>null</td>
 <td>null</td>
-<td>03/03/2023</td>
+<td>08/03/2023</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
 </tr>
-<tr onclick="table_onSelectMasterRow(this, 1, 3)">
-<td>SYS_C009477</td>
+<tr onclick="table_onSelectMasterRow(this, 1, 10)">
+<td>SYS_C009629</td>
 <td>Check</td>
 <td>"DESCRIPCION"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
 <td>null</td>
@@ -273,16 +405,16 @@
 <td>GENERATED&nbsp;NAME</td>
 <td>null</td>
 <td>null</td>
-<td>03/03/2023</td>
+<td>08/03/2023</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
 </tr>
-<tr onclick="table_onSelectMasterRow(this, 1, 4)">
-<td>SYS_C009478</td>
+<tr onclick="table_onSelectMasterRow(this, 1, 11)">
+<td>SYS_C009630</td>
 <td>Check</td>
-<td>"MAPA_DE_CALOR_ID_MAPACALOR"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>"VALOR_EVALUACIÓN_IMPACTO"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
@@ -293,16 +425,16 @@
 <td>GENERATED&nbsp;NAME</td>
 <td>null</td>
 <td>null</td>
-<td>03/03/2023</td>
+<td>08/03/2023</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
 </tr>
-<tr onclick="table_onSelectMasterRow(this, 1, 5)">
-<td>SYS_C009541</td>
+<tr onclick="table_onSelectMasterRow(this, 1, 12)">
+<td>SYS_C009631</td>
 <td>Check</td>
-<td>"RIESGO_INHERENTE"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>"VALOR_EVALUACIÓN_FRECUENCIA"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
@@ -313,7 +445,167 @@
 <td>GENERATED&nbsp;NAME</td>
 <td>null</td>
 <td>null</td>
-<td>03/03/2023</td>
+<td>08/03/2023</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 13)">
+<td>SYS_C009632</td>
+<td>Check</td>
+<td>"RESPONSABLE_ID_RESPONSABLE"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>08/03/2023</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 14)">
+<td>SYS_C009633</td>
+<td>Check</td>
+<td>"RIESGO_ID_RIESGO"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>08/03/2023</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 15)">
+<td>SYS_C009634</td>
+<td>Check</td>
+<td>"EFICACIA_ID_EFICACIA"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>08/03/2023</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 16)">
+<td>SYS_C009635</td>
+<td>Check</td>
+<td>"PERIODICIDAD_ID_PERIODICIDAD"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>08/03/2023</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 17)">
+<td>SYS_C009636</td>
+<td>Check</td>
+<td>"RESPONSABILIDAD_ID_RESP"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>08/03/2023</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 18)">
+<td>SYS_C009637</td>
+<td>Check</td>
+<td>"AUTOMATIZACION_ID_AUTOM"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>08/03/2023</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 19)">
+<td>SYS_C009638</td>
+<td>Check</td>
+<td>"OPORTUNIDAD_ID_OPORTUNIDAD"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>08/03/2023</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 1, 20)">
+<td>SYS_C009639</td>
+<td>Check</td>
+<td>"DOCUMENTAL_ID_DOCUMENTAL"&nbsp;IS&nbsp;NOT&nbsp;NULL</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>null</td>
+<td>ENABLED</td>
+<td>NOT&nbsp;DEFERRABLE</td>
+<td>VALIDATED</td>
+<td>GENERATED&nbsp;NAME</td>
+<td>null</td>
+<td>null</td>
+<td>08/03/2023</td>
 <td>null</td>
 <td>null</td>
 <td>null</td>
@@ -338,7 +630,7 @@
 <th>COLUMN_POSITION</th>
 </tr>
 <tr onclick="table_onSelectRow(this, 2)" class="currentrow">
-<td class="currentcell">MAPA_DE_CALOR_ID_MAPACALOR</td>
+<td class="currentcell">AUTOMATIZACION_ID_AUTOM</td>
 <td class="currentcell">1</td>
 </tr>
 </table>
@@ -351,7 +643,7 @@
 <th>COLUMN_POSITION</th>
 </tr>
 <tr onclick="table_onSelectRow(this, 3)" class="currentrow">
-<td class="currentcell">ID_CONTROL</td>
+<td class="currentcell">DOCUMENTAL_ID_DOCUMENTAL</td>
 <td class="currentcell">1</td>
 </tr>
 </table>
@@ -364,8 +656,8 @@
 <th>COLUMN_POSITION</th>
 </tr>
 <tr onclick="table_onSelectRow(this, 4)" class="currentrow">
-<td class="currentcell">ID_CONTROL</td>
-<td class="currentcell">null</td>
+<td class="currentcell">EFICACIA_ID_EFICACIA</td>
+<td class="currentcell">1</td>
 </tr>
 </table>
 </div>
@@ -377,8 +669,8 @@
 <th>COLUMN_POSITION</th>
 </tr>
 <tr onclick="table_onSelectRow(this, 5)" class="currentrow">
-<td class="currentcell">DESCRIPCION</td>
-<td class="currentcell">null</td>
+<td class="currentcell">OPORTUNIDAD_ID_OPORTUNIDAD</td>
+<td class="currentcell">1</td>
 </tr>
 </table>
 </div>
@@ -390,8 +682,8 @@
 <th>COLUMN_POSITION</th>
 </tr>
 <tr onclick="table_onSelectRow(this, 6)" class="currentrow">
-<td class="currentcell">MAPA_DE_CALOR_ID_MAPACALOR</td>
-<td class="currentcell">null</td>
+<td class="currentcell">PERIODICIDAD_ID_PERIODICIDAD</td>
+<td class="currentcell">1</td>
 </tr>
 </table>
 </div>
@@ -403,7 +695,202 @@
 <th>COLUMN_POSITION</th>
 </tr>
 <tr onclick="table_onSelectRow(this, 7)" class="currentrow">
-<td class="currentcell">RIESGO_INHERENTE</td>
+<td class="currentcell">ID_CONTROL</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.6.1">
+<div class="childreport"><table id="Table.8" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 8)" class="currentrow">
+<td class="currentcell">RESPONSABILIDAD_ID_RESP</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.7.1">
+<div class="childreport"><table id="Table.9" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 9)" class="currentrow">
+<td class="currentcell">RESPONSABLE_ID_RESPONSABLE</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.8.1">
+<div class="childreport"><table id="Table.10" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 10)" class="currentrow">
+<td class="currentcell">RIESGO_ID_RIESGO</td>
+<td class="currentcell">1</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.9.1">
+<div class="childreport"><table id="Table.11" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 11)" class="currentrow">
+<td class="currentcell">ID_CONTROL</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.10.1">
+<div class="childreport"><table id="Table.12" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 12)" class="currentrow">
+<td class="currentcell">DESCRIPCION</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.11.1">
+<div class="childreport"><table id="Table.13" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 13)" class="currentrow">
+<td class="currentcell">VALOR_EVALUACIÓN_IMPACTO</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.12.1">
+<div class="childreport"><table id="Table.14" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 14)" class="currentrow">
+<td class="currentcell">VALOR_EVALUACIÓN_FRECUENCIA</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.13.1">
+<div class="childreport"><table id="Table.15" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 15)" class="currentrow">
+<td class="currentcell">RESPONSABLE_ID_RESPONSABLE</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.14.1">
+<div class="childreport"><table id="Table.16" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 16)" class="currentrow">
+<td class="currentcell">RIESGO_ID_RIESGO</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.15.1">
+<div class="childreport"><table id="Table.17" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 17)" class="currentrow">
+<td class="currentcell">EFICACIA_ID_EFICACIA</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.16.1">
+<div class="childreport"><table id="Table.18" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 18)" class="currentrow">
+<td class="currentcell">PERIODICIDAD_ID_PERIODICIDAD</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.17.1">
+<div class="childreport"><table id="Table.19" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 19)" class="currentrow">
+<td class="currentcell">RESPONSABILIDAD_ID_RESP</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.18.1">
+<div class="childreport"><table id="Table.20" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 20)" class="currentrow">
+<td class="currentcell">AUTOMATIZACION_ID_AUTOM</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.19.1">
+<div class="childreport"><table id="Table.21" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 21)" class="currentrow">
+<td class="currentcell">OPORTUNIDAD_ID_OPORTUNIDAD</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.20.1">
+<div class="childreport"><table id="Table.22" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 22)" class="currentrow">
+<td class="currentcell">DOCUMENTAL_ID_DOCUMENTAL</td>
 <td class="currentcell">null</td>
 </tr>
 </table>
@@ -414,7 +901,7 @@
 </div>
 <div id="Master.2">
 <div class="masterreport">
-<table id="Table.8" cellpadding="0" cellspacing="0" summary="">
+<table id="Table.23" cellpadding="0" cellspacing="0" summary="">
 <tr>
 <th>PRIVILEGE</th>
 <th>GRANTEE</th>
@@ -427,7 +914,7 @@
 </div>
 <div id="Master.3">
 <div class="masterreport">
-<table id="Table.9" cellpadding="0" cellspacing="0" summary="">
+<table id="Table.24" cellpadding="0" cellspacing="0" summary="">
 <th>NAME</th>
 <th>VALUE</th>
 </tr>
@@ -472,7 +959,7 @@
 </div>
 <div id="Master.4">
 <div class="masterreport">
-<table id="Table.10" cellpadding="0" cellspacing="0" summary="">
+<table id="Table.25" cellpadding="0" cellspacing="0" summary="">
 <tr>
 <th>TRIGGER_NAME</th>
 <th>TRIGGER_TYPE</th>
@@ -480,46 +967,6 @@
 <th>TRIGGERING_EVENT</th>
 <th>STATUS</th>
 <th>TABLE_NAME</th>
-</tr>
-<tr onclick="table_onSelectMasterRow(this, 10, 0)" class="currentrow">
-<td class="currentcell">CALCULAR_RIESGO_INHERENTE</td>
-<td class="currentcell">BEFORE&nbsp;EACH&nbsp;ROW</td>
-<td class="currentcell">USER_PROYECTO</td>
-<td class="currentcell">INSERT&nbsp;OR&nbsp;UPDATE</td>
-<td class="currentcell">ENABLED</td>
-<td class="currentcell">CONTROL</td>
-</tr>
-<tr onclick="table_onSelectMasterRow(this, 10, 1)">
-<td>LIMITAR_VALORES</td>
-<td>BEFORE&nbsp;EACH&nbsp;ROW</td>
-<td>USER_PROYECTO</td>
-<td>INSERT&nbsp;OR&nbsp;UPDATE</td>
-<td>ENABLED</td>
-<td>CONTROL</td>
-</tr>
-<tr onclick="table_onSelectMasterRow(this, 10, 2)">
-<td>CALCULAR_CONTROL_IMPACTO</td>
-<td>BEFORE&nbsp;EACH&nbsp;ROW</td>
-<td>USER_PROYECTO</td>
-<td>INSERT&nbsp;OR&nbsp;UPDATE</td>
-<td>ENABLED</td>
-<td>CONTROL</td>
-</tr>
-<tr onclick="table_onSelectMasterRow(this, 10, 3)">
-<td>CALCULAR_CONTROL_FRECUENCIA</td>
-<td>BEFORE&nbsp;EACH&nbsp;ROW</td>
-<td>USER_PROYECTO</td>
-<td>INSERT&nbsp;OR&nbsp;UPDATE</td>
-<td>ENABLED</td>
-<td>CONTROL</td>
-</tr>
-<tr onclick="table_onSelectMasterRow(this, 10, 4)">
-<td>ASIGNAR_IMPACTO</td>
-<td>AFTER&nbsp;EACH&nbsp;ROW</td>
-<td>USER_PROYECTO</td>
-<td>INSERT&nbsp;OR&nbsp;UPDATE</td>
-<td>ENABLED</td>
-<td>CONTROL</td>
 </tr>
 </table>
 <br/>
@@ -533,102 +980,12 @@
 </div>
 <br/>
 <div id="ChildReports.4">
-<div id="Child.0.0.4">
-<div class="currentchildreport"><pre>
-TRIGGER calcular_riesgo_inherente
-BEFORE INSERT OR UPDATE ON control
-FOR EACH ROW
-BEGIN
-    :NEW.riesgo_inherente := TO_CHAR(:NEW.controlescala_frecuencia * :NEW.controlescala_impacto);
-END;</pre>
-</div>
-</div>
-<div id="Child.0.1.4">
-<div class="childreport"><pre>
-TRIGGER "LIMITAR_VALORES" BEFORE INSERT OR UPDATE ON control
-FOR EACH ROW
-BEGIN
-  IF :NEW.periocidad > 5 THEN
-    :NEW.periocidad := 5;
-  END IF;
-  IF :NEW.responsabilidad > 5 THEN
-    :NEW.responsabilidad := 5;
-  END IF;
-  IF :NEW.eficacia > 5 THEN
-    :NEW.eficacia := 5;
-  END IF;
-  IF :NEW.documental > 5 THEN
-    :NEW.documental := 5;
-  END IF;
-  IF :NEW.oportunidad > 5 THEN
-    :NEW.oportunidad := 5;
-  END IF;
-  IF :NEW.automatizacion > 5 THEN
-    :NEW.automatizacion := 5;
-  END IF;
-END;</pre>
-</div>
-</div>
-<div id="Child.0.2.4">
-<div class="childreport"><pre>
-TRIGGER "CALCULAR_CONTROL_IMPACTO" BEFORE
-    INSERT OR UPDATE OF documental, oportunidad, automatizacion ON control
-    FOR EACH ROW
-BEGIN
-    :new.controlescala_impacto := to_char(:new.documental * :new.oportunidad * :new.automatizacion);
-END;</pre>
-</div>
-</div>
-<div id="Child.0.3.4">
-<div class="childreport"><pre>
-TRIGGER "CALCULAR_CONTROL_FRECUENCIA" BEFORE INSERT OR UPDATE OF periocidad, eficacia, responsabilidad ON control
-FOR EACH ROW
-BEGIN
-    :NEW.controlescala_frecuencia := TO_CHAR(:NEW.periocidad * :NEW.responsabilidad * :NEW.eficacia);
-END;</pre>
-</div>
-</div>
-<div id="Child.0.4.4">
-<div class="childreport"><pre>
-TRIGGER "ASIGNAR_IMPACTO" AFTER
-    INSERT OR UPDATE ON CONTROL
-    FOR EACH ROW
-BEGIN
-    UPDATE "USER_PROYECTO"."Mapa_Calor"
-    SET
-        "CONTROL_IMPACTO" =
-            CASE
-            --Crea una nueva columna con los valores:
-                WHEN :new.controlescala_impacto = 'Catastrofico'
-                     AND :new.eficacia = 'Alta' THEN
-                    'Alta'
-                WHEN :new.controlescala_impacto = 'Mayor'
-                     AND :new.eficacia = 'Alta' THEN
-                    'Medio'
-                WHEN :new.controlescala_impacto = 'Moderado'
-                     AND :new.eficacia = 'Alta' THEN
-                    'Baja'
-                WHEN :new.controlescala_impacto = 'Menor'
-                     AND :new.eficacia = 'Media' THEN
-                    'Media'
-                WHEN :new.controlescala_impacto = 'Insignificante'
-                     AND :new.eficacia = 'Baja' THEN
-                    'Baja'
-                ELSE
-                    'No determinado'
-            END
-    WHERE
-        "ID_MAPACALOR" = :new.MAPA_DE_CALOR_ID_MAPACALOR;
-
-END;</pre>
-</div>
-</div>
 </div>
 </div>
 </div>
 <div id="Master.5">
 <div class="masterreport">
-<table id="Table.11" cellpadding="0" cellspacing="0" summary="">
+<table id="Table.26" cellpadding="0" cellspacing="0" summary="">
 <tr>
 <th>OWNER</th>
 <th>NAME</th>
@@ -636,54 +993,6 @@ END;</pre>
 <th>REFERENCED_OWNER</th>
 <th>REFERENCED_NAME</th>
 <th>REFERENCED_TYPE</th>
-</tr>
-<tr onclick="table_onSelectMasterRow(this, 11, 0)" class="currentrow">
-<td class="currentcell">USER_PROYECTO</td>
-<td class="currentcell">LIMITAR_VALORES</td>
-<td class="currentcell">TRIGGER</td>
-<td class="currentcell">USER_PROYECTO</td>
-<td class="currentcell">CONTROL</td>
-<td class="currentcell">TABLE</td>
-</tr>
-<tr onclick="table_onSelectMasterRow(this, 11, 1)">
-<td>USER_PROYECTO</td>
-<td>CALCULAR_RIESGO_INHERENTE</td>
-<td>TRIGGER</td>
-<td>USER_PROYECTO</td>
-<td>CONTROL</td>
-<td>TABLE</td>
-</tr>
-<tr onclick="table_onSelectMasterRow(this, 11, 2)">
-<td>USER_PROYECTO</td>
-<td>CALCULAR_CONTROL_IMPACTO</td>
-<td>TRIGGER</td>
-<td>USER_PROYECTO</td>
-<td>CONTROL</td>
-<td>TABLE</td>
-</tr>
-<tr onclick="table_onSelectMasterRow(this, 11, 3)">
-<td>USER_PROYECTO</td>
-<td>CALCULAR_CONTROL_FRECUENCIA</td>
-<td>TRIGGER</td>
-<td>USER_PROYECTO</td>
-<td>CONTROL</td>
-<td>TABLE</td>
-</tr>
-<tr onclick="table_onSelectMasterRow(this, 11, 4)">
-<td>USER_PROYECTO</td>
-<td>VISTA_CONTROL</td>
-<td>VIEW</td>
-<td>USER_PROYECTO</td>
-<td>CONTROL</td>
-<td>TABLE</td>
-</tr>
-<tr onclick="table_onSelectMasterRow(this, 11, 5)">
-<td>USER_PROYECTO</td>
-<td>ASIGNAR_IMPACTO</td>
-<td>TRIGGER</td>
-<td>USER_PROYECTO</td>
-<td>CONTROL</td>
-<td>TABLE</td>
 </tr>
 </table>
 <br/>
@@ -697,100 +1006,22 @@ END;</pre>
 </div>
 <br/>
 <div id="ChildReports.5">
-<div id="Child.0.0.5">
-<div class="currentchildreport"><table id="Table.12" cellpadding="0" cellspacing="0" summary="">
-<tr>
-<th>OWNER</th>
-<th>NAME</th>
-<th>TYPE</th>
-<th>REFERENCED_OWNER</th>
-<th>REFERENCED_NAME</th>
-<th>REFERENCED_TYPE</th>
-</tr>
-</table>
-</div>
-</div>
-<div id="Child.0.1.5">
-<div class="childreport"><table id="Table.13" cellpadding="0" cellspacing="0" summary="">
-<tr>
-<th>OWNER</th>
-<th>NAME</th>
-<th>TYPE</th>
-<th>REFERENCED_OWNER</th>
-<th>REFERENCED_NAME</th>
-<th>REFERENCED_TYPE</th>
-</tr>
-</table>
-</div>
-</div>
-<div id="Child.0.2.5">
-<div class="childreport"><table id="Table.14" cellpadding="0" cellspacing="0" summary="">
-<tr>
-<th>OWNER</th>
-<th>NAME</th>
-<th>TYPE</th>
-<th>REFERENCED_OWNER</th>
-<th>REFERENCED_NAME</th>
-<th>REFERENCED_TYPE</th>
-</tr>
-</table>
-</div>
-</div>
-<div id="Child.0.3.5">
-<div class="childreport"><table id="Table.15" cellpadding="0" cellspacing="0" summary="">
-<tr>
-<th>OWNER</th>
-<th>NAME</th>
-<th>TYPE</th>
-<th>REFERENCED_OWNER</th>
-<th>REFERENCED_NAME</th>
-<th>REFERENCED_TYPE</th>
-</tr>
-</table>
-</div>
-</div>
-<div id="Child.0.4.5">
-<div class="childreport"><table id="Table.16" cellpadding="0" cellspacing="0" summary="">
-<tr>
-<th>OWNER</th>
-<th>NAME</th>
-<th>TYPE</th>
-<th>REFERENCED_OWNER</th>
-<th>REFERENCED_NAME</th>
-<th>REFERENCED_TYPE</th>
-</tr>
-</table>
-</div>
-</div>
-<div id="Child.0.5.5">
-<div class="childreport"><table id="Table.17" cellpadding="0" cellspacing="0" summary="">
-<tr>
-<th>OWNER</th>
-<th>NAME</th>
-<th>TYPE</th>
-<th>REFERENCED_OWNER</th>
-<th>REFERENCED_NAME</th>
-<th>REFERENCED_TYPE</th>
-</tr>
-</table>
-</div>
-</div>
 </div>
 </div>
 </div>
 <div id="Master.6">
 <div class="masterreport">
-<table id="Table.18" cellpadding="0" cellspacing="0" summary="">
+<table id="Table.27" cellpadding="0" cellspacing="0" summary="">
 <th>NAME</th>
 <th>VALUE</th>
 </tr>
 <tr>
 <td>CREATED</td>
-<td>03/03/2023</td>
+<td>08/03/2023</td>
 </tr>
 <tr>
 <td>LAST_DDL_TIME</td>
-<td>03/03/2023</td>
+<td>08/03/2023</td>
 </tr>
 <tr>
 <td>OWNER</td>
@@ -1037,7 +1268,7 @@ END;</pre>
 </div>
 <div id="Master.7">
 <div class="masterreport">
-<table id="Table.19" cellpadding="0" cellspacing="0" summary="">
+<table id="Table.28" cellpadding="0" cellspacing="0" summary="">
 <tr>
 <th>PARTITION_NAME</th>
 <th>LAST_ANALYZED</th>
@@ -1063,7 +1294,7 @@ END;</pre>
 </div>
 <div id="Master.8">
 <div class="masterreport">
-<table id="Table.20" cellpadding="0" cellspacing="0" summary="">
+<table id="Table.29" cellpadding="0" cellspacing="0" summary="">
 <tr>
 <th>INDEX_OWNER</th>
 <th>INDEX_NAME</th>
@@ -1076,7 +1307,7 @@ END;</pre>
 <th>JOIN_INDEX</th>
 <th>COLUMNS</th>
 </tr>
-<tr onclick="table_onSelectMasterRow(this, 20, 0)" class="currentrow">
+<tr onclick="table_onSelectMasterRow(this, 29, 0)" class="currentrow">
 <td class="currentcell">USER_PROYECTO</td>
 <td class="currentcell">CONTROL_PK</td>
 <td class="currentcell">UNIQUE</td>
@@ -1088,7 +1319,7 @@ END;</pre>
 <td class="currentcell">NO</td>
 <td class="currentcell">ID_CONTROL</td>
 </tr>
-<tr onclick="table_onSelectMasterRow(this, 20, 1)">
+<tr onclick="table_onSelectMasterRow(this, 29, 1)">
 <td>USER_PROYECTO</td>
 <td>CONTROL__IDX</td>
 <td>UNIQUE</td>
@@ -1098,7 +1329,79 @@ END;</pre>
 <td>NO</td>
 <td>null</td>
 <td>NO</td>
-<td>MAPA_DE_CALOR_ID_MAPACALOR</td>
+<td>RESPONSABLE_ID_RESPONSABLE</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 29, 2)">
+<td>USER_PROYECTO</td>
+<td>CONTROL__IDXV1</td>
+<td>UNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>EFICACIA_ID_EFICACIA</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 29, 3)">
+<td>USER_PROYECTO</td>
+<td>CONTROL__IDXV2</td>
+<td>UNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>RESPONSABILIDAD_ID_RESP</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 29, 4)">
+<td>USER_PROYECTO</td>
+<td>CONTROL__IDXV3</td>
+<td>UNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>PERIODICIDAD_ID_PERIODICIDAD</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 29, 5)">
+<td>USER_PROYECTO</td>
+<td>CONTROL__IDXV4</td>
+<td>UNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>OPORTUNIDAD_ID_OPORTUNIDAD</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 29, 6)">
+<td>USER_PROYECTO</td>
+<td>CONTROL__IDXV5</td>
+<td>UNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>AUTOMATIZACION_ID_AUTOM</td>
+</tr>
+<tr onclick="table_onSelectMasterRow(this, 29, 7)">
+<td>USER_PROYECTO</td>
+<td>CONTROL__IDXV6</td>
+<td>UNIQUE</td>
+<td>VALID</td>
+<td>NORMAL</td>
+<td>N</td>
+<td>NO</td>
+<td>null</td>
+<td>NO</td>
+<td>DOCUMENTAL_ID_DOCUMENTAL</td>
 </tr>
 </table>
 <br/>
@@ -1113,7 +1416,7 @@ END;</pre>
 <br/>
 <div id="ChildReports.8">
 <div id="Child.0.0.8">
-<div class="currentchildreport"><table id="Table.21" cellpadding="0" cellspacing="0" summary="">
+<div class="currentchildreport"><table id="Table.30" cellpadding="0" cellspacing="0" summary="">
 <tr>
 <th>INDEX_OWNER</th>
 <th>INDEX_NAME</th>
@@ -1127,7 +1430,7 @@ END;</pre>
 <th>COLLATED_COLUMN_ID</th>
 <th>COLUMN_EXPRESSION</th>
 </tr>
-<tr onclick="table_onSelectRow(this, 21)" class="currentrow">
+<tr onclick="table_onSelectRow(this, 30)" class="currentrow">
 <td class="currentcell">USER_PROYECTO</td>
 <td class="currentcell">CONTROL_PK</td>
 <td class="currentcell">USER_PROYECTO</td>
@@ -1144,7 +1447,7 @@ END;</pre>
 </div>
 </div>
 <div id="Child.0.1.8">
-<div class="childreport"><table id="Table.22" cellpadding="0" cellspacing="0" summary="">
+<div class="childreport"><table id="Table.31" cellpadding="0" cellspacing="0" summary="">
 <tr>
 <th>INDEX_OWNER</th>
 <th>INDEX_NAME</th>
@@ -1158,12 +1461,198 @@ END;</pre>
 <th>COLLATED_COLUMN_ID</th>
 <th>COLUMN_EXPRESSION</th>
 </tr>
-<tr onclick="table_onSelectRow(this, 22)" class="currentrow">
+<tr onclick="table_onSelectRow(this, 31)" class="currentrow">
 <td class="currentcell">USER_PROYECTO</td>
 <td class="currentcell">CONTROL__IDX</td>
 <td class="currentcell">USER_PROYECTO</td>
 <td class="currentcell">CONTROL</td>
-<td class="currentcell">MAPA_DE_CALOR_ID_MAPACALOR</td>
+<td class="currentcell">RESPONSABLE_ID_RESPONSABLE</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.2.8">
+<div class="childreport"><table id="Table.32" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+<th>COLLATED_COLUMN_ID</th>
+<th>COLUMN_EXPRESSION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 32)" class="currentrow">
+<td class="currentcell">USER_PROYECTO</td>
+<td class="currentcell">CONTROL__IDXV1</td>
+<td class="currentcell">USER_PROYECTO</td>
+<td class="currentcell">CONTROL</td>
+<td class="currentcell">EFICACIA_ID_EFICACIA</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.3.8">
+<div class="childreport"><table id="Table.33" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+<th>COLLATED_COLUMN_ID</th>
+<th>COLUMN_EXPRESSION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 33)" class="currentrow">
+<td class="currentcell">USER_PROYECTO</td>
+<td class="currentcell">CONTROL__IDXV2</td>
+<td class="currentcell">USER_PROYECTO</td>
+<td class="currentcell">CONTROL</td>
+<td class="currentcell">RESPONSABILIDAD_ID_RESP</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.4.8">
+<div class="childreport"><table id="Table.34" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+<th>COLLATED_COLUMN_ID</th>
+<th>COLUMN_EXPRESSION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 34)" class="currentrow">
+<td class="currentcell">USER_PROYECTO</td>
+<td class="currentcell">CONTROL__IDXV3</td>
+<td class="currentcell">USER_PROYECTO</td>
+<td class="currentcell">CONTROL</td>
+<td class="currentcell">PERIODICIDAD_ID_PERIODICIDAD</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.5.8">
+<div class="childreport"><table id="Table.35" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+<th>COLLATED_COLUMN_ID</th>
+<th>COLUMN_EXPRESSION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 35)" class="currentrow">
+<td class="currentcell">USER_PROYECTO</td>
+<td class="currentcell">CONTROL__IDXV4</td>
+<td class="currentcell">USER_PROYECTO</td>
+<td class="currentcell">CONTROL</td>
+<td class="currentcell">OPORTUNIDAD_ID_OPORTUNIDAD</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.6.8">
+<div class="childreport"><table id="Table.36" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+<th>COLLATED_COLUMN_ID</th>
+<th>COLUMN_EXPRESSION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 36)" class="currentrow">
+<td class="currentcell">USER_PROYECTO</td>
+<td class="currentcell">CONTROL__IDXV5</td>
+<td class="currentcell">USER_PROYECTO</td>
+<td class="currentcell">CONTROL</td>
+<td class="currentcell">AUTOMATIZACION_ID_AUTOM</td>
+<td class="currentcell">1</td>
+<td class="currentcell">22</td>
+<td class="currentcell">0</td>
+<td class="currentcell">ASC</td>
+<td class="currentcell">null</td>
+<td class="currentcell">null</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="Child.0.7.8">
+<div class="childreport"><table id="Table.37" cellpadding="0" cellspacing="0" summary="">
+<tr>
+<th>INDEX_OWNER</th>
+<th>INDEX_NAME</th>
+<th>TABLE_OWNER</th>
+<th>TABLE_NAME</th>
+<th>COLUMN_NAME</th>
+<th>COLUMN_POSITION</th>
+<th>COLUMN_LENGTH</th>
+<th>CHAR_LENGTH</th>
+<th>DESCEND</th>
+<th>COLLATED_COLUMN_ID</th>
+<th>COLUMN_EXPRESSION</th>
+</tr>
+<tr onclick="table_onSelectRow(this, 37)" class="currentrow">
+<td class="currentcell">USER_PROYECTO</td>
+<td class="currentcell">CONTROL__IDXV6</td>
+<td class="currentcell">USER_PROYECTO</td>
+<td class="currentcell">CONTROL</td>
+<td class="currentcell">DOCUMENTAL_ID_DOCUMENTAL</td>
 <td class="currentcell">1</td>
 <td class="currentcell">22</td>
 <td class="currentcell">0</td>
